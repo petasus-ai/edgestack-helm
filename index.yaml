@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 2.7.0
-    created: "2022-11-11T10:06:22.148413431Z"
+    created: "2022-11-11T10:08:55.298805609Z"
     description: A Helm chart for edgetron deployment
     digest: 87ce57cf494970c268aa397b442a24ec2cac8185a45076f0b7cade387c846532
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 2.7.0
-    created: "2022-11-11T10:06:22.149229831Z"
+    created: "2022-11-11T10:08:55.299241829Z"
     description: A Helm chart for edgetron CRD deployment
     digest: a76eee44bc7deb4b6579b41a23d546516caef4f8faa33886df752d591285352d
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 2.7.0
-    created: "2022-11-11T10:06:22.149610031Z"
+    created: "2022-11-11T10:08:55.299590245Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 4cda25b8ed543ba33175ef96ee489e52d5cd087f1aec8850d68d930ab139c599
     keywords:
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 2.7.0
-    created: "2022-11-11T10:06:22.150065332Z"
+    created: "2022-11-11T10:08:55.300056666Z"
     description: A Helm chart for edgetron image default deployment
     digest: 7be6405d43663915c0c0e624e1cda5f9570c17d7f1ba7f3958b77cf0717836c2
     keywords:
@@ -89,7 +89,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 2.7.0
-    created: "2022-11-11T10:06:22.153710634Z"
+    created: "2022-11-11T10:08:55.303524122Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -116,9 +116,9 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2022-11-11T10:06:22.154004834Z"
+    created: "2022-11-11T10:08:55.303816435Z"
     description: A Helm chart for pulley-spider deployment
-    digest: 279296c6133bda3efad7025f0f8daf3d59bd7103e740327c236085f8aa301793
+    digest: b3819ff95949199a88228688eb934ce4c4df788648721afa962c45f66fff73a3
     keywords:
     - mec
     - pulley
@@ -132,4 +132,4 @@ entries:
     urls:
     - pulley-spider-2.7.0.tgz
     version: 2.7.0
-generated: "2022-11-11T10:06:22.14765503Z"
+generated: "2022-11-11T10:08:55.297765263Z"
