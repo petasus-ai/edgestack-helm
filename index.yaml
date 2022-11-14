@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 2.7.0
-    created: "2022-11-14T07:45:50.470905279Z"
+    created: "2022-11-14T07:48:27.483572516Z"
     description: A Helm chart for edgetron deployment
     digest: de698346c0d14c4eb5b77326a44cfc810deba5ea0e12a044c9d996a70d6157c6
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 2.7.0
-    created: "2022-11-14T07:45:50.471471687Z"
+    created: "2022-11-14T07:48:27.48410302Z"
     description: A Helm chart for edgetron CRD deployment
     digest: a76eee44bc7deb4b6579b41a23d546516caef4f8faa33886df752d591285352d
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 2.7.0
-    created: "2022-11-14T07:45:50.471769291Z"
+    created: "2022-11-14T07:48:27.484452622Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 4cda25b8ed543ba33175ef96ee489e52d5cd087f1aec8850d68d930ab139c599
     keywords:
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 2.7.0
-    created: "2022-11-14T07:45:50.472116696Z"
+    created: "2022-11-14T07:48:27.484900425Z"
     description: A Helm chart for edgetron image default deployment
     digest: 7be6405d43663915c0c0e624e1cda5f9570c17d7f1ba7f3958b77cf0717836c2
     keywords:
@@ -89,13 +89,13 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 2.7.0
-    created: "2022-11-14T07:45:50.475406742Z"
+    created: "2022-11-14T07:48:27.488597451Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
       version: 0.1.0
     description: A Helm chart for Kubevirt-CNI deployment
-    digest: 8979b6ed8b78a827b07949104218334642ddb74a741f3650e018074fc1c78cd0
+    digest: a8a7c6c4b1f7b8d6cfd4159e73afcd2d8f69c1af33a6d1b15e281eab16ea88c6
     home: https://wiki.onosproject.org/display/ONOS/SONA%3A+DC+Network+Virtualization
     keywords:
     - MEC
@@ -116,7 +116,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2022-11-14T07:45:50.475707446Z"
+    created: "2022-11-14T07:48:27.488907653Z"
     description: A Helm chart for pulley-spider deployment
     digest: b3819ff95949199a88228688eb934ce4c4df788648721afa962c45f66fff73a3
     keywords:
@@ -132,4 +132,4 @@ entries:
     urls:
     - pulley-spider-2.7.0.tgz
     version: 2.7.0
-generated: "2022-11-14T07:45:50.469982567Z"
+generated: "2022-11-14T07:48:27.482547609Z"
