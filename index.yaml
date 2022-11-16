@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2022-11-16T00:17:26.152631233Z"
+    created: "2022-11-16T00:20:25.33661298Z"
     description: A Helm chart for edgetron deployment
     digest: 9c21f82a85698402d5dbabb5ee4f9c28aa3bae852628f9f582f235fddd46d856
     keywords:
@@ -21,4 +21,25 @@ entries:
     urls:
     - edgetron-3.0.0.tgz
     version: 3.0.0
-generated: "2022-11-16T00:17:26.151776887Z"
+  edgetron-crd:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.0.0
+    created: "2022-11-16T00:20:25.338006616Z"
+    description: A Helm chart for edgetron CRD deployment
+    digest: 4cfbe8374e82065533bedb7776b38df19984be2f707c7a0e879d677cc6445f3d
+    keywords:
+    - mec
+    - kubevirt
+    - provision
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: edgetron-crd
+    sources:
+    - https://github.com/sonaproject/edgetron
+    urls:
+    - edgetron-crd-3.0.0.tgz
+    version: 3.0.0
+generated: "2022-11-16T00:20:25.335717057Z"
