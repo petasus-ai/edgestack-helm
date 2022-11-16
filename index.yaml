@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2022-11-16T00:23:38.001578888Z"
+    created: "2022-11-16T00:25:27.456517632Z"
     description: A Helm chart for edgetron deployment
     digest: 9c21f82a85698402d5dbabb5ee4f9c28aa3bae852628f9f582f235fddd46d856
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2022-11-16T00:23:38.007292803Z"
+    created: "2022-11-16T00:25:27.45695977Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 4cfbe8374e82065533bedb7776b38df19984be2f707c7a0e879d677cc6445f3d
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2022-11-16T00:23:38.007660404Z"
+    created: "2022-11-16T00:25:27.457247694Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: cdd1085690cdf8a97487fb9029cf2cc7df86021483e06dd029972ef85954b77d
     keywords:
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2022-11-16T00:23:38.011768215Z"
+    created: "2022-11-16T00:25:27.461309641Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -90,4 +90,25 @@ entries:
     urls:
     - kubevirt-cni-3.0.0.tgz
     version: 3.0.0
-generated: "2022-11-16T00:23:38.000658586Z"
+  pulley-spider:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-16T00:25:27.461630068Z"
+    description: A Helm chart for pulley-spider deployment
+    digest: 2d409f9e221ae584169800ac07b8b5b09a9d16dc9c866940af93ebc16aea5b71
+    keywords:
+    - mec
+    - pulley
+    - pod event
+    maintainers:
+    - email: goodhyoju@sk.com
+      name: Hyoju Jang
+    name: pulley-spider
+    sources:
+    - https://github.com/sonaproject/pulley-spider
+    urls:
+    - pulley-spider-3.0.0.tgz
+    version: 3.0.0
+generated: "2022-11-16T00:25:27.455694462Z"
