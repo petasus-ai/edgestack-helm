@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2022-11-16T00:22:04.772169336Z"
+    created: "2022-11-16T00:23:38.001578888Z"
     description: A Helm chart for edgetron deployment
     digest: 9c21f82a85698402d5dbabb5ee4f9c28aa3bae852628f9f582f235fddd46d856
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2022-11-16T00:22:04.772544741Z"
+    created: "2022-11-16T00:23:38.007292803Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 4cfbe8374e82065533bedb7776b38df19984be2f707c7a0e879d677cc6445f3d
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2022-11-16T00:22:04.772824344Z"
+    created: "2022-11-16T00:23:38.007660404Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: cdd1085690cdf8a97487fb9029cf2cc7df86021483e06dd029972ef85954b77d
     keywords:
@@ -63,4 +63,31 @@ entries:
     urls:
     - edgetron-crd-default-3.0.0.tgz
     version: 3.0.0
-generated: "2022-11-16T00:22:04.771424526Z"
+  kubevirt-cni:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.0.0
+    created: "2022-11-16T00:23:38.011768215Z"
+    dependencies:
+    - name: helm-toolkit
+      repository: http://localhost:8879/charts
+      version: 0.1.0
+    description: A Helm chart for Kubevirt-CNI deployment
+    digest: ae165c8ad006dc2d814f487bf3559e278c167e6b8c45fb096e19bbfd8f42abcf
+    home: https://wiki.onosproject.org/display/ONOS/SONA%3A+DC+Network+Virtualization
+    keywords:
+    - MEC
+    - SDN
+    - Kubevirt
+    - Kubernetes
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: kubevirt-cni
+    sources:
+    - https://github.com/sonaproject
+    urls:
+    - kubevirt-cni-3.0.0.tgz
+    version: 3.0.0
+generated: "2022-11-16T00:23:38.000658586Z"
