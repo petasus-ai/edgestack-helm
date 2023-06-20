@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-06-01T06:56:37.648913891Z"
+    created: "2023-06-20T14:07:11.662113518Z"
     description: A Helm chart for edgetron deployment
     digest: 53a6eb500a90efd4f656ba117b705ba6b001b3b5d8117506734d704258d52d37
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-06-01T06:56:37.649299893Z"
+    created: "2023-06-20T14:07:11.662532136Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 533587df0c769e8ed9579b191d4d1fd6724684f769f0acf493948eb2ab6efb52
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-06-01T06:56:37.649692695Z"
+    created: "2023-06-20T14:07:11.663030257Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 29ffeab836c7d7fca68ed80b29fc8628fda4a00aaa709c4179f493b9a18a24dd
     keywords:
@@ -68,9 +68,9 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-06-01T06:56:37.650092597Z"
+    created: "2023-06-20T14:07:11.663464976Z"
     description: A Helm chart for edgetron image default deployment
-    digest: 0e33138e228672faf8030bee6cac6d949372df69d932bbcef33e3e56d7ca5edb
+    digest: aa27274ea14ead039088aeab2de1470f018caa746128ab9c76e7300a72c4e688
     keywords:
     - mec
     - kubevirt
@@ -89,7 +89,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-06-01T06:56:37.653268014Z"
+    created: "2023-06-20T14:07:11.666492307Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -116,7 +116,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2023-06-01T06:56:37.65445952Z"
+    created: "2023-06-20T14:07:11.666812021Z"
     description: A Helm chart for pulley-spider deployment
     digest: 2d409f9e221ae584169800ac07b8b5b09a9d16dc9c866940af93ebc16aea5b71
     keywords:
@@ -132,4 +132,4 @@ entries:
     urls:
     - pulley-spider-3.0.0.tgz
     version: 3.0.0
-generated: "2023-06-01T06:56:37.648059687Z"
+generated: "2023-06-20T14:07:11.661288882Z"
