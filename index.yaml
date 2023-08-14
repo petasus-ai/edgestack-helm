@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-08-14T07:53:00.364967118Z"
+    created: "2023-08-14T07:53:56.138507541Z"
     description: A Helm chart for edgetron deployment
     digest: bf37183d178d6cf26edbae9426096828b0979871399f2e725fcb960162190989
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-08-14T07:53:00.365614229Z"
+    created: "2023-08-14T07:53:56.139130846Z"
     description: A Helm chart for edgetron CRD deployment
     digest: a8696a32c6165b3a802b61bc160f15f8cbd23f51ef63d14966a1d03fd915bfcf
     keywords:
@@ -47,9 +47,9 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-08-14T07:53:00.366431144Z"
+    created: "2023-08-14T07:53:56.140100053Z"
     description: A Helm chart for edgetron CRD default deployment
-    digest: 3f8b3adae5fab3ecb01e9bd3f4418ff3102abe1a098844d5c142e489db27c3c8
+    digest: 66f11f3ac010b3dd6af1756e85dc040c635adc4186d59fb6bcfde4c07b18531c
     keywords:
     - mec
     - kubevirt
@@ -59,7 +59,7 @@ entries:
       name: Jian Li
     name: edgetron-crd-default
     sources:
-    - https://github.com/sonaproject/edgetron
+    - https://github.com/edgestack/edgetron
     urls:
     - edgetron-crd-default-3.0.0.tgz
     version: 3.0.0
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-08-14T07:53:00.367040155Z"
+    created: "2023-08-14T07:53:56.140603357Z"
     description: A Helm chart for edgetron image default deployment
     digest: cd1922368924a8962a5ef4d1aa430b641232be9cac89b89c387cfe74c2f1f7de
     keywords:
@@ -89,7 +89,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-08-14T07:53:00.370971626Z"
+    created: "2023-08-14T07:53:56.143912182Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -116,7 +116,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2023-08-14T07:53:00.371381433Z"
+    created: "2023-08-14T07:53:56.144224484Z"
     description: A Helm chart for pulley-spider deployment
     digest: 2e818120390be1d994f5eaca986d28f69f8f29a829baf7e9c24982a3e2b72831
     keywords:
@@ -132,4 +132,4 @@ entries:
     urls:
     - pulley-spider-3.0.0.tgz
     version: 3.0.0
-generated: "2023-08-14T07:53:00.363253587Z"
+generated: "2023-08-14T07:53:56.137624135Z"
