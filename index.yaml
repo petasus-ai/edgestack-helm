@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-08-14T07:55:18.556302112Z"
+    created: "2023-08-14T07:56:35.683190925Z"
     description: A Helm chart for edgetron deployment
     digest: bf37183d178d6cf26edbae9426096828b0979871399f2e725fcb960162190989
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-08-14T07:55:18.556770017Z"
+    created: "2023-08-14T07:56:35.683632032Z"
     description: A Helm chart for edgetron CRD deployment
     digest: a8696a32c6165b3a802b61bc160f15f8cbd23f51ef63d14966a1d03fd915bfcf
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-08-14T07:55:18.557183921Z"
+    created: "2023-08-14T07:56:35.684090439Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 66f11f3ac010b3dd6af1756e85dc040c635adc4186d59fb6bcfde4c07b18531c
     keywords:
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-08-14T07:55:18.558333834Z"
+    created: "2023-08-14T07:56:35.684633748Z"
     description: A Helm chart for edgetron image default deployment
     digest: 9cec380a639bd615e214ecd76614d2f6e5e82cdfe3883011d068b16bf156079d
     keywords:
@@ -89,13 +89,13 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.0.0
-    created: "2023-08-14T07:55:18.562199676Z"
+    created: "2023-08-14T07:56:35.690926547Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
       version: 0.1.0
     description: A Helm chart for Kubevirt-CNI deployment
-    digest: b5653cab5f9f6d6971504451795720857518bb1b0278842aa9781a205291ca9d
+    digest: ef78de56f0401d24c52ac76076fa2834bdac5b5c86c2cf1e3813ecf5342f9e45
     home: https://wiki.onosproject.org/display/ONOS/SONA%3A+DC+Network+Virtualization
     keywords:
     - MEC
@@ -107,7 +107,7 @@ entries:
       name: Jian Li
     name: kubevirt-cni
     sources:
-    - https://github.com/sonaproject
+    - https://github.com/edgestack
     urls:
     - kubevirt-cni-3.0.0.tgz
     version: 3.0.0
@@ -116,7 +116,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2023-08-14T07:55:18.56255448Z"
+    created: "2023-08-14T07:56:35.692266269Z"
     description: A Helm chart for pulley-spider deployment
     digest: 2e818120390be1d994f5eaca986d28f69f8f29a829baf7e9c24982a3e2b72831
     keywords:
@@ -132,4 +132,4 @@ entries:
     urls:
     - pulley-spider-3.0.0.tgz
     version: 3.0.0
-generated: "2023-08-14T07:55:18.555375202Z"
+generated: "2023-08-14T07:56:35.68225271Z"
