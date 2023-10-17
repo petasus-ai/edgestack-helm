@@ -5,9 +5,9 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.1.0
-    created: "2023-08-09T09:07:32.196110552Z"
+    created: "2023-10-17T05:52:29.593000921Z"
     description: A Helm chart for edgetron deployment
-    digest: 8e9d6e612fda6a2f739e24e8c59ab312b93610f54c55046c43bcebd13e9ffb98
+    digest: e8748c547985601ebafa4768cf97aa848cd0a51bdffcf657ee325132ef99cd55
     keywords:
     - mec
     - cluster api
@@ -17,7 +17,7 @@ entries:
       name: Jian Li
     name: edgetron
     sources:
-    - https://github.com/sonaproject/edgetron
+    - https://github.com/edgestack/edgetron
     urls:
     - edgetron-3.1.0.tgz
     version: 3.1.0
@@ -26,9 +26,9 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.1.0
-    created: "2023-08-09T09:07:32.196849154Z"
+    created: "2023-10-17T05:52:29.593744532Z"
     description: A Helm chart for edgetron CRD deployment
-    digest: ca6b50d511231925411084ec7d117b208dff6a5acc43510f3e1a5a858f13e12a
+    digest: d1a7496fe2308e75900a967116533c0b38c7cdd65b15dd8828d4d37dbc5ae7c7
     keywords:
     - mec
     - kubevirt
@@ -38,7 +38,7 @@ entries:
       name: Jian Li
     name: edgetron-crd
     sources:
-    - https://github.com/sonaproject/edgetron
+    - https://github.com/edgestack/edgetron
     urls:
     - edgetron-crd-3.1.0.tgz
     version: 3.1.0
@@ -47,9 +47,9 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.1.0
-    created: "2023-08-09T09:07:32.197332155Z"
+    created: "2023-10-17T05:52:29.594231039Z"
     description: A Helm chart for edgetron CRD default deployment
-    digest: 44943ba186d18136a76f3a2cfe0984fc7e341452cedd72c004a7877ef6b2dd49
+    digest: 20c216e565b4000514cc7b6888e0261c941b5460b292c677015f83a240fa5e27
     keywords:
     - mec
     - kubevirt
@@ -59,7 +59,7 @@ entries:
       name: Jian Li
     name: edgetron-crd-default
     sources:
-    - https://github.com/sonaproject/edgetron
+    - https://github.com/edgestack/edgetron
     urls:
     - edgetron-crd-default-3.1.0.tgz
     version: 3.1.0
@@ -68,9 +68,9 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.1.0
-    created: "2023-08-09T09:07:32.197846156Z"
+    created: "2023-10-17T05:52:29.595376055Z"
     description: A Helm chart for edgetron image default deployment
-    digest: 127f0dc21c38791f6ca5ad56ed5cacd9c6dd54d47c1814d6c1b82b039e8c41cc
+    digest: dda8c18c32cfa9d18e360255a4c227148177ee1b76bb4c6ed4cfaf82a3368851
     keywords:
     - mec
     - kubevirt
@@ -80,7 +80,7 @@ entries:
       name: Jian Li
     name: edgetron-image-default
     sources:
-    - https://github.com/sonaproject/edgetron
+    - https://github.com/edgestack/edgetron
     urls:
     - edgetron-image-default-3.1.0.tgz
     version: 3.1.0
@@ -89,13 +89,13 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.1.0
-    created: "2023-08-09T09:07:32.201447765Z"
+    created: "2023-10-17T05:52:29.598176396Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
       version: 0.1.0
     description: A Helm chart for Kubevirt-CNI deployment
-    digest: ed65ffa46070860b66c55c940e0029f1183972e5bcb0586e6773a78b624ebab9
+    digest: 5c5a81724fb790d42e8b914e1064c4a2ef95889d12d3499fc5b10504a3e3641d
     home: https://wiki.onosproject.org/display/ONOS/SONA%3A+DC+Network+Virtualization
     keywords:
     - MEC
@@ -107,7 +107,7 @@ entries:
       name: Jian Li
     name: kubevirt-cni
     sources:
-    - https://github.com/sonaproject
+    - https://github.com/edgestack
     urls:
     - kubevirt-cni-3.1.0.tgz
     version: 3.1.0
@@ -116,7 +116,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2023-08-09T09:07:32.201812466Z"
+    created: "2023-10-17T05:52:29.598464Z"
     description: A Helm chart for pulley-spider deployment
     digest: b210ca30abf7fc1b4b4a84f337ed24a928b7fe33e9a6deec2be866bb6d58786e
     keywords:
@@ -132,4 +132,4 @@ entries:
     urls:
     - pulley-spider-3.1.0.tgz
     version: 3.1.0
-generated: "2023-08-09T09:07:32.194811349Z"
+generated: "2023-10-17T05:52:29.592223309Z"
