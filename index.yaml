@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-04-30T02:50:06.815465651Z"
+    created: "2024-04-30T10:45:33.001874333Z"
     description: A Helm chart for edgetron deployment
     digest: 9fda57b6ae31d4769cd740832683651d67404b91ba73338a37cabb7e1a791609
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-04-30T02:50:06.815757377Z"
+    created: "2024-04-30T10:45:33.002426264Z"
     description: A Helm chart for edgetron CRD deployment
     digest: c5f83afd1f0890f20598124b2ce0048d7d6484c40a960ce980a8c3d0139b5ffa
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-04-30T02:50:06.816016545Z"
+    created: "2024-04-30T10:45:33.003174663Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: d261075235eeb9e4ef614c226bc8a80c6e7e64322f1245cdb2ef19e7b6eed1d9
     keywords:
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-04-30T02:50:06.816304123Z"
+    created: "2024-04-30T10:45:33.003501574Z"
     description: A Helm chart for edgetron image default deployment
     digest: f036fc474fe709c16433d6c3705614298e1aa0e3c8dc53a2a48bf34f58ea6682
     keywords:
@@ -89,7 +89,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-04-30T02:50:06.818982953Z"
+    created: "2024-04-30T10:45:33.005552336Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -111,12 +111,23 @@ entries:
     urls:
     - kubevirt-cni-3.2.0.tgz
     version: 3.2.0
+  petasus-document:
+  - apiVersion: v2
+    appVersion: 3.2.0
+    created: "2024-04-30T10:45:33.00580608Z"
+    description: A Helm chart for Petasus Cloud document
+    digest: 8bea75f566a0257eaf79793df02a90f723944ca16ed721d28e7a355f2693bfae
+    name: petasus-document
+    type: application
+    urls:
+    - petasus-document-3.2.0.tgz
+    version: 3.2.0
   pulley-spider:
   - annotations:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2024-04-30T02:50:06.819546509Z"
+    created: "2024-04-30T10:45:33.006037323Z"
     description: A Helm chart for pulley-spider deployment
     digest: c9bfad67eaab1f370c36b43e6118a5a0a8424e25a08e2a816fd6f49132caa1dc
     keywords:
@@ -132,4 +143,4 @@ entries:
     urls:
     - pulley-spider-3.2.0.tgz
     version: 3.2.0
-generated: "2024-04-30T02:50:06.814883422Z"
+generated: "2024-04-30T10:45:33.000361002Z"
