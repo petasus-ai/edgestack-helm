@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2024-10-14T07:28:35.137677771Z"
+    created: "2024-10-14T07:35:18.070840773Z"
     description: A Helm chart for edgetron deployment
     digest: 1a1879c05a524d6c37b57910828ac131386329ee142af2ca517b1f9165a13dfc
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2024-10-14T07:28:35.13799304Z"
+    created: "2024-10-14T07:35:18.071136516Z"
     description: A Helm chart for edgetron CRD deployment
     digest: ebbae86f1ee2e721b2a003459a8a3c37f4e3f2d0968dc2646747af6abc351f84
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2024-10-14T07:28:35.138294764Z"
+    created: "2024-10-14T07:35:18.07142245Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: e25f632a72efe49887b441f400bda3c32eb3c283f538dd91d4507e574f671be6
     keywords:
@@ -63,4 +63,25 @@ entries:
     urls:
     - edgetron-crd-default-3.3.0.tgz
     version: 3.3.0
-generated: "2024-10-14T07:28:35.137089291Z"
+  edgetron-image-default:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.3.0
+    created: "2024-10-14T07:35:18.071719195Z"
+    description: A Helm chart for edgetron image default deployment
+    digest: 27ca4bb3677011ebe05d669eda2e009638ec650207b3300357bbdc72cb609c4c
+    keywords:
+    - mec
+    - kubevirt
+    - provision
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: edgetron-image-default
+    sources:
+    - https://github.com/edgestack/edgetron
+    urls:
+    - edgetron-image-default-3.3.0.tgz
+    version: 3.3.0
+generated: "2024-10-14T07:35:18.070125466Z"
