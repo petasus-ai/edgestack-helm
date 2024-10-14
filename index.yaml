@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2024-10-14T07:35:18.070840773Z"
+    created: "2024-10-14T08:17:18.143113396Z"
     description: A Helm chart for edgetron deployment
     digest: 1a1879c05a524d6c37b57910828ac131386329ee142af2ca517b1f9165a13dfc
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2024-10-14T07:35:18.071136516Z"
+    created: "2024-10-14T08:17:18.148679011Z"
     description: A Helm chart for edgetron CRD deployment
     digest: ebbae86f1ee2e721b2a003459a8a3c37f4e3f2d0968dc2646747af6abc351f84
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2024-10-14T07:35:18.07142245Z"
+    created: "2024-10-14T08:17:18.149024255Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: e25f632a72efe49887b441f400bda3c32eb3c283f538dd91d4507e574f671be6
     keywords:
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2024-10-14T07:35:18.071719195Z"
+    created: "2024-10-14T08:17:18.149314637Z"
     description: A Helm chart for edgetron image default deployment
     digest: 27ca4bb3677011ebe05d669eda2e009638ec650207b3300357bbdc72cb609c4c
     keywords:
@@ -84,4 +84,31 @@ entries:
     urls:
     - edgetron-image-default-3.3.0.tgz
     version: 3.3.0
-generated: "2024-10-14T07:35:18.070125466Z"
+  kubevirt-cni:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.3.0
+    created: "2024-10-14T08:17:18.151628485Z"
+    dependencies:
+    - name: helm-toolkit
+      repository: http://localhost:8879/charts
+      version: 0.1.0
+    description: A Helm chart for Kubevirt-CNI deployment
+    digest: 7e43a3c1bcc2667db59bcc4d999b03fda54ea1821eb803c3f4136ef39b668aeb
+    home: https://wiki.onosproject.org/display/ONOS/SONA%3A+DC+Network+Virtualization
+    keywords:
+    - MEC
+    - SDN
+    - Kubevirt
+    - Kubernetes
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: kubevirt-cni
+    sources:
+    - https://github.com/edgestack
+    urls:
+    - kubevirt-cni-3.3.0.tgz
+    version: 3.3.0
+generated: "2024-10-14T08:17:18.142479974Z"
