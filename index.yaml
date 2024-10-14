@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-10-14T07:25:41.316074843Z"
+    created: "2024-10-14T07:33:42.893769959Z"
     description: A Helm chart for edgetron deployment
     digest: 4a667b3251a35ec86d07549de82a69f10b139ed05c598c7d6094e6b955adc1f8
     keywords:
@@ -24,7 +24,7 @@ entries:
   edgetron-cluster-template:
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-10-14T07:25:41.316401908Z"
+    created: "2024-10-14T07:33:42.894168443Z"
     description: A Helm chart for edgetron KaaS cluster templates
     digest: f11d5b74bc256774b6ca220cc99382911aec9c4f69a7dcc729b0db20877e0fd6
     maintainers:
@@ -41,7 +41,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-10-14T07:25:41.316729144Z"
+    created: "2024-10-14T07:33:42.894463523Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 764de2a8a1150f602ae65fd9638663ba882055fb15744bb28750192971394514
     keywords:
@@ -62,7 +62,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-10-14T07:25:41.317032575Z"
+    created: "2024-10-14T07:33:42.894765747Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: bf75230a9f66cd7064938abaad2fa2e5d917f59a5cf97eeec7b69c624e3041f6
     keywords:
@@ -83,9 +83,9 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-10-14T07:25:41.317347899Z"
+    created: "2024-10-14T07:33:42.895076317Z"
     description: A Helm chart for edgetron image default deployment
-    digest: a46e0bd6cff3c8e3c6fcb041922d6661cc1d2e1b04a7ee70194287a514700975
+    digest: 375736ec92fef16acf8d5a560b9897da55f92fe36300966817ab50831db916d1
     keywords:
     - mec
     - kubevirt
@@ -102,7 +102,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2024-10-14T07:25:41.317877806Z"
+    created: "2024-10-14T07:33:42.895760803Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -115,7 +115,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2024-10-14T07:25:41.322897013Z"
+    created: "2024-10-14T07:33:42.898764798Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -140,7 +140,7 @@ entries:
   petasus-document:
   - apiVersion: v2
     appVersion: 3.2.0
-    created: "2024-10-14T07:25:41.323143167Z"
+    created: "2024-10-14T07:33:42.899480564Z"
     description: A Helm chart for Petasus Cloud document
     digest: 8bea75f566a0257eaf79793df02a90f723944ca16ed721d28e7a355f2693bfae
     name: petasus-document
@@ -153,7 +153,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2024-10-14T07:25:41.323356488Z"
+    created: "2024-10-14T07:33:42.899952715Z"
     description: A Helm chart for pulley-spider deployment
     digest: c9bfad67eaab1f370c36b43e6118a5a0a8424e25a08e2a816fd6f49132caa1dc
     keywords:
@@ -169,4 +169,4 @@ entries:
     urls:
     - pulley-spider-3.2.0.tgz
     version: 3.2.0
-generated: "2024-10-14T07:25:41.315492446Z"
+generated: "2024-10-14T07:33:42.893110679Z"
