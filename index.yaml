@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2025-01-02T06:06:47.526510697Z"
+    created: "2025-01-02T06:11:50.534571349Z"
     description: A Helm chart for edgetron deployment
     digest: 2d1a41ea06cf326d1334a87042a80c9b70843ea407050c75d41ad0202e384d58
     keywords:
@@ -24,7 +24,7 @@ entries:
   edgetron-cluster-template:
   - apiVersion: v1
     appVersion: 3.3.0
-    created: "2025-01-02T06:06:47.527780678Z"
+    created: "2025-01-02T06:11:50.534911224Z"
     description: A Helm chart for edgetron KaaS cluster templates
     digest: c03b8612f6e8aaeafea73f62650563a1c82776a914ed54ee16b4aa4dfab6028b
     maintainers:
@@ -41,7 +41,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2025-01-02T06:06:47.528391978Z"
+    created: "2025-01-02T06:11:50.535205333Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 486a33ee9880f5342b6a4097a3a719e5217ea971a04486676b00029dd24db68c
     keywords:
@@ -62,7 +62,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2025-01-02T06:06:47.528988893Z"
+    created: "2025-01-02T06:11:50.535480787Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: e25f632a72efe49887b441f400bda3c32eb3c283f538dd91d4507e574f671be6
     keywords:
@@ -83,7 +83,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2025-01-02T06:06:47.529310904Z"
+    created: "2025-01-02T06:11:50.53576592Z"
     description: A Helm chart for edgetron image default deployment
     digest: 23d2e9df35b383cafb19be734a4d5237fab4109b7b5e4e6f43c29d04c3d8106c
     keywords:
@@ -102,7 +102,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-02T06:06:47.529880106Z"
+    created: "2025-01-02T06:11:50.536331275Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -115,7 +115,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.3.0
-    created: "2025-01-02T06:06:47.531984494Z"
+    created: "2025-01-02T06:11:50.539735501Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -140,7 +140,7 @@ entries:
   petasus-document:
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-01-02T06:06:47.532257994Z"
+    created: "2025-01-02T06:11:50.540013841Z"
     description: A Helm chart for Petasus Cloud document
     digest: 5e637573b5c0c3e694308eb336d8a1307e34acf295f022545b5bc0a7ac0ec2d9
     name: petasus-document
@@ -153,7 +153,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2025-01-02T06:06:47.532477334Z"
+    created: "2025-01-02T06:11:50.54023836Z"
     description: A Helm chart for pulley-spider deployment
     digest: 6317cec6e03fdc59390316558f5c6808396cac8b645292c703d703ff66e7ffc9
     keywords:
@@ -169,25 +169,10 @@ entries:
     urls:
     - pulley-spider-3.3.0.tgz
     version: 3.3.0
-  rebellions-vfio-manager:
-  - apiVersion: v1
-    appVersion: 3.3.0
-    created: "2025-01-02T06:06:47.532714185Z"
-    description: A Helm chart for Rebellions VFIO-manager
-    digest: 15428a8d2663e77cf8ea4ad2924ae6f52f2de1fc96797fc22f6c161ff7e6340f
-    maintainers:
-    - email: changju.gim@sk.com
-      name: Changju Kim
-    name: rebellions-vfio-manager
-    sources:
-    - https://github.com/edgestack/edgetron
-    urls:
-    - rebellions-vfio-manager-3.3.0.tgz
-    version: 3.3.0
   vfio-manager:
   - apiVersion: v1
     appVersion: 3.3.0
-    created: "2025-01-02T06:06:47.532953592Z"
+    created: "2025-01-02T06:11:50.540515358Z"
     description: A Helm chart for VFIO-manager
     digest: da97b0fdd3e691039f483f2ee2c86fe2fea925565a2a2c77e7006d18f60ea88d
     maintainers:
@@ -199,4 +184,4 @@ entries:
     urls:
     - vfio-manager-3.3.0.tgz
     version: 3.3.0
-generated: "2025-01-02T06:06:47.525878057Z"
+generated: "2025-01-02T06:11:50.533920444Z"
