@@ -3,7 +3,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-02-28T02:36:38.5340227Z"
+    created: "2025-02-28T02:40:35.527954405Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -11,4 +11,25 @@ entries:
     urls:
     - kubeeye-1.0.0.tgz
     version: 1.0.0
-generated: "2025-02-28T02:36:38.532621956Z"
+  pulley-spider:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-02-28T02:40:35.528759267Z"
+    description: A Helm chart for pulley-spider deployment
+    digest: 61a6d242587fdd3827a922eb04e503d0bdf40f1f4c5b0692aeee0d1a0a36f5c3
+    keywords:
+    - mec
+    - pulley
+    - pod event
+    maintainers:
+    - email: goodhyoju@sk.com
+      name: Hyoju Jang
+    name: pulley-spider
+    sources:
+    - https://github.com/sonaproject/pulley-spider
+    urls:
+    - pulley-spider-3.4.0.tgz
+    version: 3.4.0
+generated: "2025-02-28T02:40:35.52552792Z"
