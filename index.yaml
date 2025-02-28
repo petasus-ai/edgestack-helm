@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-02-28T02:59:43.467940921Z"
+    created: "2025-02-28T03:04:57.020839984Z"
     description: A Helm chart for edgetron deployment
     digest: 10c6e0cb942011b494a0d0f91fb86619da129f68df1519e4db14f12128678f0a
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-02-28T02:59:43.46898446Z"
+    created: "2025-02-28T03:04:57.021159514Z"
     description: A Helm chart for edgetron CRD deployment
     digest: d585f71f352abb11cb647321601639f11685be537e5da69355ca3ebfc62f9af7
     keywords:
@@ -42,10 +42,31 @@ entries:
     urls:
     - edgetron-crd-3.4.0.tgz
     version: 3.4.0
+  edgetron-image-default:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.4.0
+    created: "2025-02-28T03:04:57.021534558Z"
+    description: A Helm chart for edgetron image default deployment
+    digest: e695a52c9693968deb8a7203efa4a0b2a6070c82f04f9031e3ad96d32d9722ec
+    keywords:
+    - mec
+    - kubevirt
+    - provision
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: edgetron-image-default
+    sources:
+    - https://github.com/edgestack/edgetron
+    urls:
+    - edgetron-image-default-3.4.0.tgz
+    version: 3.4.0
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-02-28T02:59:43.470124971Z"
+    created: "2025-02-28T03:04:57.022397167Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -58,7 +79,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2025-02-28T02:59:43.470641856Z"
+    created: "2025-02-28T03:04:57.022899159Z"
     description: A Helm chart for pulley-spider deployment
     digest: 61a6d242587fdd3827a922eb04e503d0bdf40f1f4c5b0692aeee0d1a0a36f5c3
     keywords:
@@ -74,4 +95,4 @@ entries:
     urls:
     - pulley-spider-3.4.0.tgz
     version: 3.4.0
-generated: "2025-02-28T02:59:43.467278113Z"
+generated: "2025-02-28T03:04:57.020183092Z"
