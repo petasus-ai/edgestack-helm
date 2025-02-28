@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-02-28T03:11:44.435666632Z"
+    created: "2025-02-28T05:51:34.403591115Z"
     description: A Helm chart for edgetron deployment
     digest: 10c6e0cb942011b494a0d0f91fb86619da129f68df1519e4db14f12128678f0a
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-02-28T03:11:44.435975498Z"
+    created: "2025-02-28T05:51:34.403921346Z"
     description: A Helm chart for edgetron CRD deployment
     digest: d585f71f352abb11cb647321601639f11685be537e5da69355ca3ebfc62f9af7
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-02-28T03:11:44.436263545Z"
+    created: "2025-02-28T05:51:34.404207605Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 716229f59c3df6a696a618bb0598f785a470019d40016dd2b2426e197e20f1ea
     keywords:
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-02-28T03:11:44.436564707Z"
+    created: "2025-02-28T05:51:34.404500395Z"
     description: A Helm chart for edgetron image default deployment
     digest: e695a52c9693968deb8a7203efa4a0b2a6070c82f04f9031e3ad96d32d9722ec
     keywords:
@@ -87,7 +87,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-02-28T03:11:44.437081201Z"
+    created: "2025-02-28T05:51:34.405017017Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -100,7 +100,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-02-28T03:11:44.440495271Z"
+    created: "2025-02-28T05:51:34.408988926Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -127,7 +127,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2025-02-28T03:11:44.440724118Z"
+    created: "2025-02-28T05:51:34.409254886Z"
     description: A Helm chart for pulley-spider deployment
     digest: 61a6d242587fdd3827a922eb04e503d0bdf40f1f4c5b0692aeee0d1a0a36f5c3
     keywords:
@@ -143,4 +143,19 @@ entries:
     urls:
     - pulley-spider-3.4.0.tgz
     version: 3.4.0
-generated: "2025-02-28T03:11:44.434986864Z"
+  vfio-manager:
+  - apiVersion: v1
+    appVersion: 3.4.0
+    created: "2025-02-28T05:51:34.409546525Z"
+    description: A Helm chart for VFIO-manager
+    digest: 4af3b95d448faa3bb69b1fd021ff28c9e0730d3a006f3a3434ec9ea7bfd74d6f
+    maintainers:
+    - email: changju.gim@sk.com
+      name: Changju Kim
+    name: vfio-manager
+    sources:
+    - https://github.com/edgestack/edgetron
+    urls:
+    - vfio-manager-3.4.0.tgz
+    version: 3.4.0
+generated: "2025-02-28T05:51:34.402829523Z"
