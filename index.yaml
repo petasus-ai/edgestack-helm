@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-05-01T23:05:47.267249906Z"
+    created: "2025-05-19T12:39:32.604191837Z"
     description: A Helm chart for edgetron deployment
     digest: 10c6e0cb942011b494a0d0f91fb86619da129f68df1519e4db14f12128678f0a
     keywords:
@@ -24,7 +24,7 @@ entries:
   edgetron-cluster-template:
   - apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-05-01T23:05:47.268109487Z"
+    created: "2025-05-19T12:39:32.604573167Z"
     description: A Helm chart for edgetron KaaS cluster templates
     digest: bab35c879af909023a19d868aa80d887d1791be53f970bd70dc121e48355d81e
     maintainers:
@@ -41,7 +41,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-05-01T23:05:47.268675321Z"
+    created: "2025-05-19T12:39:32.604944805Z"
     description: A Helm chart for edgetron CRD deployment
     digest: d585f71f352abb11cb647321601639f11685be537e5da69355ca3ebfc62f9af7
     keywords:
@@ -62,7 +62,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-05-01T23:05:47.269185021Z"
+    created: "2025-05-19T12:39:32.605308811Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 590ff8ca4f13a410897b80f1a9611376a95febb3926a0ebebbf9dafab182eeca
     keywords:
@@ -83,7 +83,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-05-01T23:05:47.269871439Z"
+    created: "2025-05-19T12:39:32.605662795Z"
     description: A Helm chart for edgetron image default deployment
     digest: 409a87bc6d71206e9ab2acf36851ddcc5e5509838cf6964706d25627c6d2dd7a
     keywords:
@@ -102,7 +102,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-05-01T23:05:47.270446421Z"
+    created: "2025-05-19T12:39:32.606332534Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -115,7 +115,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-05-01T23:05:47.272610673Z"
+    created: "2025-05-19T12:39:32.610971532Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -140,7 +140,7 @@ entries:
   kubevirt-xpu-device-plugin:
   - apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-05-01T23:05:47.272873733Z"
+    created: "2025-05-19T12:39:32.611263882Z"
     description: A Helm chart for kubevirt-xpu-device-plugin
     digest: 61317e4f1da32faa3197b19b22f9f8b7167886f8a4ab8ea5f05dc8a158cf325b
     maintainers:
@@ -155,7 +155,7 @@ entries:
   petasus-document:
   - apiVersion: v2
     appVersion: 3.4.0
-    created: "2025-05-01T23:05:47.273128227Z"
+    created: "2025-05-19T12:39:32.611547339Z"
     description: A Helm chart for Petasus Cloud document
     digest: cb7fc492befdab19a7c0f3da74005d5fc8c9ca23cdfeb5defaae6aad4325ba8c
     name: petasus-document
@@ -168,7 +168,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2025-05-01T23:05:47.273348056Z"
+    created: "2025-05-19T12:39:32.611788306Z"
     description: A Helm chart for pulley-spider deployment
     digest: 61a6d242587fdd3827a922eb04e503d0bdf40f1f4c5b0692aeee0d1a0a36f5c3
     keywords:
@@ -184,10 +184,28 @@ entries:
     urls:
     - pulley-spider-3.4.0.tgz
     version: 3.4.0
+  rbln-k8s-operator:
+  - apiVersion: v2
+    appVersion: 3.4.0
+    created: "2025-05-19T12:39:32.614784186Z"
+    dependencies:
+    - condition: nfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: v0.17.3
+    description: A Helm chart for Rebellions K8S Operator
+    digest: ba678a7d917602979e84609f658f04061b57ceb5fb2e99d6766cb327eaade9f7
+    name: rbln-k8s-operator
+    sources:
+    - https://github.com/rebellions-sw/rbln-k8s-operator
+    type: application
+    urls:
+    - rbln-k8s-operator-3.4.0.tgz
+    version: 3.4.0
   vfio-manager:
   - apiVersion: v1
     appVersion: 3.4.0
-    created: "2025-05-01T23:05:47.273598453Z"
+    created: "2025-05-19T12:39:32.615096049Z"
     description: A Helm chart for VFIO-manager
     digest: 02fd68e1fee8f6ba4f73e078fd9b72af8a629a6470389438a928d23003ee12e9
     maintainers:
@@ -199,4 +217,4 @@ entries:
     urls:
     - vfio-manager-3.4.0.tgz
     version: 3.4.0
-generated: "2025-05-01T23:05:47.266483738Z"
+generated: "2025-05-19T12:39:32.603404641Z"
