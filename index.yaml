@@ -1,9 +1,30 @@
 apiVersion: v1
 entries:
+  edgetron:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.5.0
+    created: "2025-12-05T10:30:17.387914917Z"
+    description: A Helm chart for edgetron deployment
+    digest: b40b28a14328b5e600529fcff468f518b0aeb81412feff872ed3a748bc45c1b3
+    keywords:
+    - mec
+    - cluster api
+    - provision
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: edgetron
+    sources:
+    - https://github.com/edgestack/edgetron
+    urls:
+    - edgetron-3.5.0.tgz
+    version: 3.5.0
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-12-05T10:29:02.905895019Z"
+    created: "2025-12-05T10:30:17.388504917Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -11,4 +32,4 @@ entries:
     urls:
     - kubeeye-1.0.0.tgz
     version: 1.0.0
-generated: "2025-12-05T10:29:02.903413887Z"
+generated: "2025-12-05T10:30:17.387134133Z"
