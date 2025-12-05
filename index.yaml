@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:53:39.810107283Z"
+    created: "2025-12-05T10:58:56.765668053Z"
     description: A Helm chart for dyal backend deployment
     digest: c4839f4d1a29f5a7d053c751525f31a3ca685ee47927ee9ec71dd7be00261bb2
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:53:39.810980139Z"
+    created: "2025-12-05T10:58:56.766229502Z"
     description: A Helm chart for edgetron deployment
     digest: b40b28a14328b5e600529fcff468f518b0aeb81412feff872ed3a748bc45c1b3
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:53:39.811683707Z"
+    created: "2025-12-05T10:58:56.766561542Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 3063ffcc1c3b2d71577e6add77e0810e9512e05b0e6f59eb91a2a4d993d1548b
     keywords:
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:53:39.812187174Z"
+    created: "2025-12-05T10:58:56.766864087Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 505ad78085e44e989afb7b99af0280c09a21d82e9c00149294089bcaae5a352e
     keywords:
@@ -89,7 +89,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:53:39.813108112Z"
+    created: "2025-12-05T10:58:56.767237936Z"
     description: A Helm chart for edgetron image default deployment
     digest: 8100f3b18cd0f9caaa871f3a43a69d2c3bceaff9af280e0baeab539179bbefe8
     keywords:
@@ -108,7 +108,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-12-05T10:53:39.813696995Z"
+    created: "2025-12-05T10:58:56.767775139Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -121,7 +121,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:53:39.815827201Z"
+    created: "2025-12-05T10:58:56.771464345Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -146,7 +146,7 @@ entries:
   kubevirt-xpu-device-plugin:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:53:39.81607326Z"
+    created: "2025-12-05T10:58:56.771722868Z"
     description: A Helm chart for kubevirt-xpu-device-plugin
     digest: 063cc20905042d7ec0f7d371d5e1917e7baefa19a37c61646308fbac4e1a9aeb
     maintainers:
@@ -161,7 +161,7 @@ entries:
   petasus-document:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2025-12-05T10:53:39.816320451Z"
+    created: "2025-12-05T10:58:56.772011397Z"
     description: A Helm chart for Petasus Cloud document
     digest: 1da8d26a413f74fb8ef3f379b16beacdf34c1ee45907a49417517e8af85d181c
     name: petasus-document
@@ -169,4 +169,17 @@ entries:
     urls:
     - petasus-document-3.5.0.tgz
     version: 3.5.0
-generated: "2025-12-05T10:53:39.809615345Z"
+  petasus-resource-manager:
+  - apiVersion: v2
+    appVersion: 3.5.0
+    created: "2025-12-05T10:58:56.772396737Z"
+    description: A Helm chart for Petasus Resource Manager
+    digest: 4717a499aad7181106fd6804351cec6babb36a0f54dcfe065ed4b79e8992977c
+    name: petasus-resource-manager
+    sources:
+    - https://github.com/petasus-ai/petasus-resource-manager
+    type: application
+    urls:
+    - petasus-resource-manager-3.5.0.tgz
+    version: 3.5.0
+generated: "2025-12-05T10:58:56.765197924Z"
