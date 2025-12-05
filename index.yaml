@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:43:02.141622168Z"
+    created: "2025-12-05T10:44:09.997008522Z"
     description: A Helm chart for dyal backend deployment
     digest: c4839f4d1a29f5a7d053c751525f31a3ca685ee47927ee9ec71dd7be00261bb2
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:43:02.142999128Z"
+    created: "2025-12-05T10:44:09.998175753Z"
     description: A Helm chart for edgetron deployment
     digest: b40b28a14328b5e600529fcff468f518b0aeb81412feff872ed3a748bc45c1b3
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:43:02.143611487Z"
+    created: "2025-12-05T10:44:09.998983061Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 3063ffcc1c3b2d71577e6add77e0810e9512e05b0e6f59eb91a2a4d993d1548b
     keywords:
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:43:02.144138998Z"
+    created: "2025-12-05T10:44:09.999597532Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 505ad78085e44e989afb7b99af0280c09a21d82e9c00149294089bcaae5a352e
     keywords:
@@ -89,7 +89,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:43:02.144842365Z"
+    created: "2025-12-05T10:44:10.000022295Z"
     description: A Helm chart for edgetron image default deployment
     digest: 8100f3b18cd0f9caaa871f3a43a69d2c3bceaff9af280e0baeab539179bbefe8
     keywords:
@@ -108,7 +108,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-12-05T10:43:02.145433484Z"
+    created: "2025-12-05T10:44:10.000561493Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -121,7 +121,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:43:02.1475396Z"
+    created: "2025-12-05T10:44:10.002698665Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -143,4 +143,19 @@ entries:
     urls:
     - kubevirt-cni-3.5.0.tgz
     version: 3.5.0
-generated: "2025-12-05T10:43:02.141148318Z"
+  kubevirt-xpu-device-plugin:
+  - apiVersion: v1
+    appVersion: 3.5.0
+    created: "2025-12-05T10:44:10.002940637Z"
+    description: A Helm chart for kubevirt-xpu-device-plugin
+    digest: 063cc20905042d7ec0f7d371d5e1917e7baefa19a37c61646308fbac4e1a9aeb
+    maintainers:
+    - email: pyguni@gmail.com
+      name: Jian Li
+    name: kubevirt-xpu-device-plugin
+    sources:
+    - https://github.com/edgestack/kubevirt-xpu-device-plugin
+    urls:
+    - kubevirt-xpu-device-plugin-3.5.0.tgz
+    version: 3.5.0
+generated: "2025-12-05T10:44:09.996509731Z"
