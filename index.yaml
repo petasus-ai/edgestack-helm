@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:41:14.470517337Z"
+    created: "2025-12-05T10:43:02.141622168Z"
     description: A Helm chart for dyal backend deployment
     digest: c4839f4d1a29f5a7d053c751525f31a3ca685ee47927ee9ec71dd7be00261bb2
     keywords:
@@ -26,7 +26,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:41:14.471163399Z"
+    created: "2025-12-05T10:43:02.142999128Z"
     description: A Helm chart for edgetron deployment
     digest: b40b28a14328b5e600529fcff468f518b0aeb81412feff872ed3a748bc45c1b3
     keywords:
@@ -47,7 +47,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:41:14.471640116Z"
+    created: "2025-12-05T10:43:02.143611487Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 3063ffcc1c3b2d71577e6add77e0810e9512e05b0e6f59eb91a2a4d993d1548b
     keywords:
@@ -68,7 +68,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:41:14.471964069Z"
+    created: "2025-12-05T10:43:02.144138998Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 505ad78085e44e989afb7b99af0280c09a21d82e9c00149294089bcaae5a352e
     keywords:
@@ -89,7 +89,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2025-12-05T10:41:14.472784155Z"
+    created: "2025-12-05T10:43:02.144842365Z"
     description: A Helm chart for edgetron image default deployment
     digest: 8100f3b18cd0f9caaa871f3a43a69d2c3bceaff9af280e0baeab539179bbefe8
     keywords:
@@ -108,7 +108,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-12-05T10:41:14.473947249Z"
+    created: "2025-12-05T10:43:02.145433484Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -116,4 +116,31 @@ entries:
     urls:
     - kubeeye-1.0.0.tgz
     version: 1.0.0
-generated: "2025-12-05T10:41:14.470062621Z"
+  kubevirt-cni:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.5.0
+    created: "2025-12-05T10:43:02.1475396Z"
+    dependencies:
+    - name: helm-toolkit
+      repository: http://localhost:8879/charts
+      version: 0.1.0
+    description: A Helm chart for Kubevirt-CNI deployment
+    digest: c2f2dd93290b98b80f752dfe87ed28ca7437c18debdc82b14b9b65fea36474a9
+    home: https://wiki.onosproject.org/display/ONOS/SONA%3A+DC+Network+Virtualization
+    keywords:
+    - MEC
+    - SDN
+    - Kubevirt
+    - Kubernetes
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: kubevirt-cni
+    sources:
+    - https://github.com/edgestack
+    urls:
+    - kubevirt-cni-3.5.0.tgz
+    version: 3.5.0
+generated: "2025-12-05T10:43:02.141148318Z"
