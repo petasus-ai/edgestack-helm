@@ -1,11 +1,100 @@
 apiVersion: v1
 entries:
+  authentik:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: upgrade to authentik 2025.8.4
+      artifacthub.io/images: |
+        - name: authentik
+          image: ghcr.io/goauthentik/server:2025.8.4
+          whitelisted: true
+        - name: authentik-outpost-proxy
+          image: ghcr.io/goauthentik/proxy:2025.8.4
+          whitelisted: true
+        - name: authentik-outpost-ldap
+          image: ghcr.io/goauthentik/ldap:2025.8.4
+          whitelisted: true
+        - name: authentik-outpost-radius
+          image: ghcr.io/goauthentik/radius:2025.8.4
+          whitelisted: true
+        - name: authentik-outpost-rac
+          image: ghcr.io/goauthentik/rac:2025.8.4
+          whitelisted: true
+      artifacthub.io/license: GPL
+      artifacthub.io/links: |
+        - name: GitHub
+          url: https://github.com/goauthentik/authentik
+        - name: Docs
+          url: https://goauthentik.io/docs/
+      artifacthub.io/maintainers: |
+        - name: authentik Team
+          email: hello@goauthentik.io
+          url: https://goauthentik.io
+      artifacthub.io/screenshots: |
+        - title: User interface
+          url: https://docs.goauthentik.io/img/screen_apps_light.jpg
+        - title: Admin interface
+          url: https://docs.goauthentik.io/img/screen_admin_light.jpg
+    apiVersion: v2
+    appVersion: 2025.8.4
+    created: "2026-01-13T05:49:22.189016499Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 16.7.26
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 22.0.4
+    - alias: serviceAccount
+      condition: serviceAccount.create
+      name: authentik-remote-cluster
+      repository: https://charts.goauthentik.io
+      version: 2.1.0
+    - alias: ingresscontroller
+      condition: ingresscontroller.enabled
+      name: ingress-nginx
+      repository: file://charts/ingress-nginx
+      version: 4.13.0
+    description: authentik is an open-source Identity Provider focused on flexibility
+      and versatility
+    digest: 2ded3c69eba08e80738ad12aea164f659c1038ba3254be0b1c67b2f95b7d8e10
+    home: https://goauthentik.io
+    icon: https://goauthentik.io/img/icon.png
+    keywords:
+    - authentication
+    - directory
+    - identity
+    - idp
+    - ldap
+    - oauth
+    - oidc
+    - proxy
+    - saml
+    - scim
+    - single-sign-on
+    - sp
+    - sso
+    maintainers:
+    - email: hello@goauthentik.io
+      name: authentik Team
+      url: https://goauthentik.io
+    name: authentik
+    sources:
+    - https://goauthentik.io/docs/
+    - https://github.com/goauthentik/authentik
+    type: application
+    urls:
+    - authentik-2025.8.4.tgz
+    version: 2025.8.4
   dyal:
   - annotations:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.797451804Z"
+    created: "2026-01-13T05:49:22.189304268Z"
     description: A Helm chart for dyal backend deployment
     digest: 066b7274dc68056435427b19128de6a851c597a74ea8dee54b469a385bfd9919
     keywords:
@@ -26,7 +115,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.798350846Z"
+    created: "2026-01-13T05:49:22.189771564Z"
     description: A Helm chart for edgetron deployment
     digest: 3699a8f88fcbaa717b0de345d46ec3d041bf0ec60d7dafd8303815e81679e66d
     keywords:
@@ -47,7 +136,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.798946384Z"
+    created: "2026-01-13T05:49:22.190305495Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 3063ffcc1c3b2d71577e6add77e0810e9512e05b0e6f59eb91a2a4d993d1548b
     keywords:
@@ -68,7 +157,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.799635004Z"
+    created: "2026-01-13T05:49:22.190568187Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 505ad78085e44e989afb7b99af0280c09a21d82e9c00149294089bcaae5a352e
     keywords:
@@ -89,7 +178,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.800389899Z"
+    created: "2026-01-13T05:49:22.190930936Z"
     description: A Helm chart for edgetron image default deployment
     digest: 8100f3b18cd0f9caaa871f3a43a69d2c3bceaff9af280e0baeab539179bbefe8
     keywords:
@@ -108,7 +197,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2026-01-06T07:00:42.800949249Z"
+    created: "2026-01-13T05:49:22.191462403Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -121,7 +210,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.803059654Z"
+    created: "2026-01-13T05:49:22.194966026Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -146,7 +235,7 @@ entries:
   kubevirt-xpu-device-plugin:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.803316843Z"
+    created: "2026-01-13T05:49:22.195335618Z"
     description: A Helm chart for kubevirt-xpu-device-plugin
     digest: 063cc20905042d7ec0f7d371d5e1917e7baefa19a37c61646308fbac4e1a9aeb
     maintainers:
@@ -161,7 +250,7 @@ entries:
   petasus-document:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.803564964Z"
+    created: "2026-01-13T05:49:22.195591247Z"
     description: A Helm chart for Petasus Cloud document
     digest: 1da8d26a413f74fb8ef3f379b16beacdf34c1ee45907a49417517e8af85d181c
     name: petasus-document
@@ -172,7 +261,7 @@ entries:
   petasus-resource-manager:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.803951443Z"
+    created: "2026-01-13T05:49:22.19601451Z"
     description: A Helm chart for Petasus Resource Manager
     digest: 4717a499aad7181106fd6804351cec6babb36a0f54dcfe065ed4b79e8992977c
     name: petasus-resource-manager
@@ -187,7 +276,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2026-01-06T07:00:42.804197671Z"
+    created: "2026-01-13T05:49:22.196271652Z"
     description: A Helm chart for pulley-spider deployment
     digest: d389d58687255a4938b13b87c285954be7b46be579cf7ddb479385130b4342f5
     keywords:
@@ -206,7 +295,7 @@ entries:
   rbln-npu-operator:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.808337898Z"
+    created: "2026-01-13T05:49:22.198830267Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -224,7 +313,7 @@ entries:
   vfio-manager:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-01-06T07:00:42.80860779Z"
+    created: "2026-01-13T05:49:22.199119769Z"
     description: A Helm chart for VFIO-manager
     digest: b79fd206318247b07795eb115017b104d17496827eb90d373c51df6cc1ad18a7
     maintainers:
@@ -236,4 +325,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-01-06T07:00:42.796994103Z"
+generated: "2026-01-13T05:49:22.164071803Z"
