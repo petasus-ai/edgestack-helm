@@ -38,7 +38,7 @@ entries:
           url: https://docs.goauthentik.io/img/screen_admin_light.jpg
     apiVersion: v2
     appVersion: 2025.8.4
-    created: "2026-07-08T01:53:00.819231936Z"
+    created: "2026-07-08T01:57:32.734790294Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -126,7 +126,7 @@ entries:
           url: https://docs.goauthentik.io/img/screen_admin_light.jpg
     apiVersion: v2
     appVersion: 2025.8.4
-    created: "2026-07-08T01:53:00.795430234Z"
+    created: "2026-07-08T01:57:32.714885459Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -182,7 +182,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.819828195Z"
+    created: "2026-07-08T01:57:32.735095716Z"
     description: A Helm chart for dyal backend deployment
     digest: 066b7274dc68056435427b19128de6a851c597a74ea8dee54b469a385bfd9919
     keywords:
@@ -203,7 +203,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.82129391Z"
+    created: "2026-07-08T01:57:32.736093594Z"
     description: A Helm chart for edgetron deployment
     digest: 099a4131af4c2e795a58bf402de9015df024aec98c952e7bc866700c5819bea9
     keywords:
@@ -223,9 +223,9 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0-cilium
-    created: "2026-07-08T01:53:00.820780715Z"
+    created: "2026-07-08T01:57:32.735638232Z"
     description: A Helm chart for edgetron deployment
-    digest: 131beef2c998c5888432b0872955126fb8d51f2ba21cf31d3b8c3892bb0e87c8
+    digest: 844cf427006224e834d210d2b3ca7c8cfcd8d8c6c571a3a36c06958a96bb8400
     keywords:
     - mec
     - cluster api
@@ -244,7 +244,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.82196487Z"
+    created: "2026-07-08T01:57:32.736744012Z"
     description: A Helm chart for edgetron CRD deployment
     digest: e64aaee1928c135c5bded7c1566ed3ac8cbba9004864be7a9fa20be01e095cdc
     keywords:
@@ -264,7 +264,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0-cilium
-    created: "2026-07-08T01:53:00.821604843Z"
+    created: "2026-07-08T01:57:32.736389098Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 37e0dba5beb7fda8853813f7e68e76191ac1f71288fb1fd0f479f67a29cedbee
     keywords:
@@ -285,7 +285,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.822543172Z"
+    created: "2026-07-08T01:57:32.737268825Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 6eddd4e21d0e3813438bb3184ca5d2a08f72b155e83ad8a98e070bf795869e03
     keywords:
@@ -305,7 +305,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0-cilium
-    created: "2026-07-08T01:53:00.82228047Z"
+    created: "2026-07-08T01:57:32.737013337Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 140a2fa0333cca540c2759e82b716cc1bb5a991014f0dbf5301913a552b19a82
     keywords:
@@ -326,7 +326,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.823217036Z"
+    created: "2026-07-08T01:57:32.737966432Z"
     description: A Helm chart for edgetron image default deployment
     digest: 497a91cfc2c336d039abaa55b6658c879403c6f0195b43d75333a95b5a9da967
     keywords:
@@ -346,7 +346,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0-cilium
-    created: "2026-07-08T01:53:00.822858231Z"
+    created: "2026-07-08T01:57:32.737558558Z"
     description: A Helm chart for edgetron image default deployment
     digest: 824e0c7892d36e927602dfabeb91da2445a9dccdafb29651651be8c0aa2592b4
     keywords:
@@ -365,7 +365,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2026-07-08T01:53:00.823799454Z"
+    created: "2026-07-08T01:57:32.738502055Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -378,7 +378,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.826090028Z"
+    created: "2026-07-08T01:57:32.741905598Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -403,7 +403,7 @@ entries:
   kubevirt-xpu-device-plugin:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.826347612Z"
+    created: "2026-07-08T01:57:32.742150978Z"
     description: A Helm chart for kubevirt-xpu-device-plugin
     digest: 063cc20905042d7ec0f7d371d5e1917e7baefa19a37c61646308fbac4e1a9aeb
     maintainers:
@@ -418,7 +418,7 @@ entries:
   petasus-document:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.826596823Z"
+    created: "2026-07-08T01:57:32.74238684Z"
     description: A Helm chart for Petasus AI Cloud document
     digest: e8394ac429049598c1a0ec933bb690488a97fb57321da5d91dcef002482eb9db
     name: petasus-document
@@ -429,7 +429,7 @@ entries:
   petasus-resource-manager:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.8273462Z"
+    created: "2026-07-08T01:57:32.743200023Z"
     description: A Helm chart for Petasus Resource Manager
     digest: 59b2eadfbd2252d941ea4782dfe37d092609b69a2e9be44336b48fc8ac546fbc
     name: petasus-resource-manager
@@ -441,7 +441,7 @@ entries:
     version: 3.5.0
   - apiVersion: v2
     appVersion: 3.5.0-cilium
-    created: "2026-07-08T01:53:00.826954075Z"
+    created: "2026-07-08T01:57:32.74283007Z"
     description: A Helm chart for Petasus Resource Manager
     digest: d227b20eccb92779644f1f62628e5c12f9882b4c5fc2089a90a3ada734376024
     name: petasus-resource-manager
@@ -456,7 +456,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-08T01:53:00.827598886Z"
+    created: "2026-07-08T01:57:32.743479954Z"
     description: A Helm chart for pulley-spider deployment
     digest: d389d58687255a4938b13b87c285954be7b46be579cf7ddb479385130b4342f5
     keywords:
@@ -475,7 +475,7 @@ entries:
   rbln-npu-operator:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.830331028Z"
+    created: "2026-07-08T01:57:32.746009704Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -493,7 +493,7 @@ entries:
   vfio-manager:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-07-08T01:53:00.830606489Z"
+    created: "2026-07-08T01:57:32.746280271Z"
     description: A Helm chart for VFIO-manager
     digest: b79fd206318247b07795eb115017b104d17496827eb90d373c51df6cc1ad18a7
     maintainers:
@@ -505,4 +505,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-07-08T01:53:00.774014847Z"
+generated: "2026-07-08T01:57:32.693276088Z"
