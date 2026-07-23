@@ -1,0 +1,28 @@
+# Pinned to the DraNet v1.0.1 release (github.com/google/dranet). The image is the
+# upstream multi-arch (amd64+arm64) ghcr publish; deployments override the repository
+# to the harbor mirror.
+image:
+  repository: ghcr.io/google/dranet
+  tag: v1.0.1
+  pullPolicy: IfNotPresent
+
+# Extra args passed to the dranet binary. --hostname-override is always added
+# from the node name; -v sets the log verbosity.
+verbosity: 4
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 50Mi
+
+# The DaemonSet must run on every node (control-plane included) so it can move
+# netdevs into pods scheduled anywhere. It tolerates every taint by default.
+tolerations:
+  - operator: Exists
+    effect: NoSchedule
+
+# The DeviceClass DraNet advertises. Set create=false when the DeviceClass is
+# managed out-of-band.
+deviceClass:
+  create: true
+  name: dranet

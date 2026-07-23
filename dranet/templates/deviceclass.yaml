@@ -1,0 +1,10 @@
+{{- if .Values.deviceClass.create }}
+apiVersion: resource.k8s.io/v1
+kind: DeviceClass
+metadata:
+  name: {{ .Values.deviceClass.name }}
+spec:
+  selectors:
+    - cel:
+        expression: device.driver == "dra.net"
+{{- end }}
