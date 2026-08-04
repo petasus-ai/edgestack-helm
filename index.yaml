@@ -177,31 +177,6 @@ entries:
     urls:
     - authentik-2025.8.4-cilium.tgz
     version: 2025.8.4-cilium
-  dranet:
-  - apiVersion: v2
-    appVersion: v1.0.1
-    created: "2026-08-03T07:52:38.881957469Z"
-    description: DraNet — a DRA (Dynamic Resource Allocation) netdev driver. Its DaemonSet
-      publishes host network devices (SR-IOV VFs, RDMA) as DRA ResourceSlices and,
-      at claim time, moves the netdev (with its IP, routes and RDMA char devices)
-      into the pod network namespace. Ships the "dranet" DeviceClass. Requires containerd
-      2.x with NRI + CDI enabled on the nodes.
-    digest: b7f37b902a622a6907edfc45ef32aa77629146622eeebc9ff5efebc9982b8dd5
-    home: https://github.com/google/dranet
-    keywords:
-    - dra
-    - sriov
-    - rdma
-    - networking
-    maintainers:
-    - name: Petasus
-    name: dranet
-    sources:
-    - https://github.com/google/dranet
-    type: application
-    urls:
-    - dranet-1.0.1.tgz
-    version: 1.0.1
   dyal:
   - annotations:
       category: Infrastructure
