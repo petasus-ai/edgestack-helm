@@ -38,7 +38,7 @@ entries:
           url: https://docs.goauthentik.io/img/screen_admin_light.jpg
     apiVersion: v2
     appVersion: 2025.8.4
-    created: "2026-09-03T07:21:47.421531291Z"
+    created: "2026-09-04T03:39:59.313457559Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -92,7 +92,7 @@ entries:
   dra-driver-sriov:
   - apiVersion: v2
     appVersion: 1e26c63
-    created: "2026-09-03T07:21:47.422141782Z"
+    created: "2026-09-04T03:39:59.314097741Z"
     description: Helm chart for a Dynamic Resource Allocation (DRA) resource driver
       for SR-IOV devices
     digest: e81c8a5e6053a9c735105caaf3512c199d8d3f75b6fff2ae6db99be2a1e390b8
@@ -104,11 +104,11 @@ entries:
     version: 0.1.0
   dra-driver-xpu:
   - apiVersion: v2
-    appVersion: 0b85ebc
-    created: "2026-09-03T07:21:47.422807165Z"
+    appVersion: c2d0556
+    created: "2026-09-04T03:39:59.314821567Z"
     description: Vendor-neutral DRA driver exposing VFIO passthrough and mediated
       devices to KubeVirt VMs
-    digest: c9c0d107cec570f62c8d24066a5d4d70963b25b97f3fa51bc022ea32d77ced8b
+    digest: 3661ec5d09bb1e46c6413a07d7b95d4c0718553117d7022fd3403445ed0d14f7
     home: https://github.com/petasus-ai/dra-driver-xpu
     keywords:
     - dra
@@ -132,7 +132,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.42319515Z"
+    created: "2026-09-04T03:39:59.315108494Z"
     description: A Helm chart for dyal backend deployment
     digest: 8cf9859facf9448f10f915071aeff9aba6a7cac0a2760263a65bd525844fbfd5
     keywords:
@@ -153,7 +153,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.423686357Z"
+    created: "2026-09-04T03:39:59.315660815Z"
     description: A Helm chart for edgetron deployment
     digest: 61bcb19fb3d45e5eb9776d94b1584eba7e01f393e8616e3420bae76d3360646e
     keywords:
@@ -174,7 +174,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.424007097Z"
+    created: "2026-09-04T03:39:59.315971507Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 1726a70d70a90ed2056b996c39c7379690c4deebf7a6638565ec37a6c8163233
     keywords:
@@ -195,7 +195,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.424263736Z"
+    created: "2026-09-04T03:39:59.316254477Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 1d7354cf38ae0a62f18e67e21fc9f996b82609c606258bf5eae3b20c88e58cee
     keywords:
@@ -216,7 +216,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.424551914Z"
+    created: "2026-09-04T03:39:59.31657884Z"
     description: A Helm chart for edgetron image default deployment
     digest: ff99137dfe5df824b5db616c41b17396496c01d1f1d31a7ae585866c8d44770e
     keywords:
@@ -235,7 +235,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2026-09-03T07:21:47.425108484Z"
+    created: "2026-09-04T03:39:59.317127445Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -248,7 +248,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.428608733Z"
+    created: "2026-09-04T03:39:59.319435797Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -273,7 +273,7 @@ entries:
   kubevirt-xpu-device-plugin:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.428902051Z"
+    created: "2026-09-04T03:39:59.31974045Z"
     description: A Helm chart for kubevirt-xpu-device-plugin
     digest: 04cf1d8a115e006a62f83e78f193356c8d6953a3a665ba383cca6e919885a87a
     maintainers:
@@ -288,7 +288,7 @@ entries:
   petasus-document:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.429156466Z"
+    created: "2026-09-04T03:39:59.319975039Z"
     description: A Helm chart for Petasus AI Cloud document
     digest: a35e67ec3664f52654e3b9f9e5d95cc561507200b6a9905518bea6193cbf340e
     name: petasus-document
@@ -299,7 +299,7 @@ entries:
   petasus-resource-manager:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.429936674Z"
+    created: "2026-09-04T03:39:59.320710792Z"
     description: A Helm chart for Petasus Resource Manager
     digest: 41f40b17945ea2e17dafe182f455ad3b7abb126a9c8ae6b1a1d0ce9f6e349818
     name: petasus-resource-manager
@@ -311,7 +311,7 @@ entries:
     version: 3.5.0
   - apiVersion: v2
     appVersion: 3.5.0-cilium
-    created: "2026-09-03T07:21:47.429503264Z"
+    created: "2026-09-04T03:39:59.320317237Z"
     description: A Helm chart for Petasus Resource Manager
     digest: 6416af4211f92934326bd29ede770b42e8325702fbd1938ef6035754cb702842
     name: petasus-resource-manager
@@ -326,7 +326,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2026-09-03T07:21:47.430178937Z"
+    created: "2026-09-04T03:39:59.320918051Z"
     description: A Helm chart for pulley-spider deployment
     digest: d389d58687255a4938b13b87c285954be7b46be579cf7ddb479385130b4342f5
     keywords:
@@ -345,7 +345,7 @@ entries:
   rbln-npu-operator:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.432666173Z"
+    created: "2026-09-04T03:39:59.324990014Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -363,7 +363,7 @@ entries:
   vfio-manager:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-09-03T07:21:47.43293221Z"
+    created: "2026-09-04T03:39:59.325283551Z"
     description: A Helm chart for VFIO-manager
     digest: b79fd206318247b07795eb115017b104d17496827eb90d373c51df6cc1ad18a7
     maintainers:
@@ -375,4 +375,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-09-03T07:21:47.400558592Z"
+generated: "2026-09-04T03:39:59.290066815Z"
