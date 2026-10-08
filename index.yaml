@@ -38,7 +38,7 @@ entries:
           url: https://docs.goauthentik.io/img/screen_admin_light.jpg
     apiVersion: v2
     appVersion: 2025.8.4
-    created: "2026-10-07T05:27:09.414249405Z"
+    created: "2026-10-08T05:21:27.656454646Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -92,7 +92,7 @@ entries:
   dra-driver-sriov:
   - apiVersion: v2
     appVersion: 1e26c63
-    created: "2026-10-07T05:27:09.414909229Z"
+    created: "2026-10-08T05:21:27.656893412Z"
     description: Helm chart for a Dynamic Resource Allocation (DRA) resource driver
       for SR-IOV devices
     digest: e81c8a5e6053a9c735105caaf3512c199d8d3f75b6fff2ae6db99be2a1e390b8
@@ -105,7 +105,7 @@ entries:
   dra-driver-xpu:
   - apiVersion: v2
     appVersion: 1bce1db
-    created: "2026-10-07T05:27:09.415633173Z"
+    created: "2026-10-08T05:21:27.65736056Z"
     description: Vendor-neutral DRA driver exposing VFIO passthrough and mediated
       devices to KubeVirt VMs
     digest: 1e675636635280109ca8d9888b7a3a2f6f44a818beef600394a0fd90d7e33bc4
@@ -132,7 +132,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.415928615Z"
+    created: "2026-10-08T05:21:27.657538877Z"
     description: A Helm chart for dyal backend deployment
     digest: 8cf9859facf9448f10f915071aeff9aba6a7cac0a2760263a65bd525844fbfd5
     keywords:
@@ -153,7 +153,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.41655194Z"
+    created: "2026-10-08T05:21:27.657910712Z"
     description: A Helm chart for edgetron deployment
     digest: f8847d4bfed33e12dedc7f167f099769e875bd4789e75dc95c7da537151eadec
     keywords:
@@ -174,7 +174,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.416907655Z"
+    created: "2026-10-08T05:21:27.658112144Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 3dac4889001f4171ce3736b2d3ee4dae614880740fa0be500983c80ca6458a54
     keywords:
@@ -195,7 +195,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.417223686Z"
+    created: "2026-10-08T05:21:27.658286514Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: eb720ab9ad83e2a3237deb87c07375a1ce671f620359da37e58e3a2bf140742f
     keywords:
@@ -216,7 +216,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.417540288Z"
+    created: "2026-10-08T05:21:27.658487925Z"
     description: A Helm chart for edgetron image default deployment
     digest: 5a4bed1e5b97a77f3951edfbb3a9c7d3b07ed3420fe7fc45fd81dd4091258031
     keywords:
@@ -235,7 +235,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2026-10-07T05:27:09.418083193Z"
+    created: "2026-10-08T05:21:27.658809326Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -248,7 +248,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.420286152Z"
+    created: "2026-10-08T05:21:27.660178562Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -273,7 +273,7 @@ entries:
   kubevirt-xpu-device-plugin:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.420551498Z"
+    created: "2026-10-08T05:21:27.66035082Z"
     description: A Helm chart for kubevirt-xpu-device-plugin
     digest: 04cf1d8a115e006a62f83e78f193356c8d6953a3a665ba383cca6e919885a87a
     maintainers:
@@ -288,7 +288,7 @@ entries:
   nvsentinel-capi-remediator:
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-10-07T05:27:09.421716907Z"
+    created: "2026-10-08T05:21:27.661029114Z"
     description: Turns NVSentinel GPU health signals from Cluster API workload clusters
       into Machine remediation on the management cluster.
     digest: a6c7cd74b08779ffce7076fb29629d02812cbcdb44ff5af2c05dffd7352deb1e
@@ -307,7 +307,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-10-07T05:27:09.421329422Z"
+    created: "2026-10-08T05:21:27.660809986Z"
     description: Turns NVSentinel GPU health signals from Cluster API workload clusters
       into Machine remediation on the management cluster.
     digest: 27ff7ae9ec4c72d48eb8ef89c34835366e414f30b4761a05dcc8620082d7b876
@@ -326,7 +326,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: v0.1.0-rc.1
-    created: "2026-10-07T05:27:09.420924214Z"
+    created: "2026-10-08T05:21:27.660587544Z"
     description: Turns NVSentinel GPU health signals from Cluster API workload clusters
       into Machine remediation on the management cluster.
     digest: 47ae18eb6aeacb8a0e999e32dc4a8a395d8262b0394071875c64703f118e2a97
@@ -346,7 +346,7 @@ entries:
   petasus-document:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.422108799Z"
+    created: "2026-10-08T05:21:27.661168532Z"
     description: A Helm chart for Petasus AI Cloud document
     digest: a35e67ec3664f52654e3b9f9e5d95cc561507200b6a9905518bea6193cbf340e
     name: petasus-document
@@ -357,9 +357,9 @@ entries:
   petasus-resource-manager:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.423356251Z"
+    created: "2026-10-08T05:21:27.661610683Z"
     description: A Helm chart for Petasus Resource Manager
-    digest: 9c6b581adbf390e6a633036c32e0494ec4d3af9a410a0b8e240d040868db1cb5
+    digest: ba324ddcb24837466a69d732019e1b2479baab93aeae9ec3a342784967302180
     name: petasus-resource-manager
     sources:
     - https://github.com/petasus-ai/petasus-resource-manager
@@ -369,7 +369,7 @@ entries:
     version: 3.5.0
   - apiVersion: v2
     appVersion: 3.5.0-cilium
-    created: "2026-10-07T05:27:09.422680869Z"
+    created: "2026-10-08T05:21:27.66138085Z"
     description: A Helm chart for Petasus Resource Manager
     digest: 6416af4211f92934326bd29ede770b42e8325702fbd1938ef6035754cb702842
     name: petasus-resource-manager
@@ -384,7 +384,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2026-10-07T05:27:09.423964098Z"
+    created: "2026-10-08T05:21:27.661734248Z"
     description: A Helm chart for pulley-spider deployment
     digest: 858b2910cb89c9661aad0a39c3cc2debc9914b1b6de9bfb3b6ff36b4895e6c51
     keywords:
@@ -403,7 +403,7 @@ entries:
   rbln-npu-operator:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.427183847Z"
+    created: "2026-10-08T05:21:27.663382982Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -421,7 +421,7 @@ entries:
   vfio-manager:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-07T05:27:09.427463179Z"
+    created: "2026-10-08T05:21:27.663788088Z"
     description: A Helm chart for VFIO-manager
     digest: b79fd206318247b07795eb115017b104d17496827eb90d373c51df6cc1ad18a7
     maintainers:
@@ -433,4 +433,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-07T05:27:09.393258754Z"
+generated: "2026-10-08T05:21:27.643019693Z"
