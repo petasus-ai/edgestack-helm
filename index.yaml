@@ -38,7 +38,7 @@ entries:
           url: https://docs.goauthentik.io/img/screen_admin_light.jpg
     apiVersion: v2
     appVersion: 2025.8.4
-    created: "2026-10-21T04:52:56.328951827Z"
+    created: "2026-10-21T07:11:39.334881866Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -92,7 +92,7 @@ entries:
   dra-driver-sriov:
   - apiVersion: v2
     appVersion: 1e26c63
-    created: "2026-10-21T04:52:56.329657803Z"
+    created: "2026-10-21T07:11:39.335298779Z"
     description: Helm chart for a Dynamic Resource Allocation (DRA) resource driver
       for SR-IOV devices
     digest: e81c8a5e6053a9c735105caaf3512c199d8d3f75b6fff2ae6db99be2a1e390b8
@@ -105,7 +105,7 @@ entries:
   dra-driver-xpu:
   - apiVersion: v2
     appVersion: 1bce1db
-    created: "2026-10-21T04:52:56.330492142Z"
+    created: "2026-10-21T07:11:39.335795441Z"
     description: Vendor-neutral DRA driver exposing VFIO passthrough and mediated
       devices to KubeVirt VMs
     digest: 1e675636635280109ca8d9888b7a3a2f6f44a818beef600394a0fd90d7e33bc4
@@ -132,7 +132,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.330822437Z"
+    created: "2026-10-21T07:11:39.335989291Z"
     description: A Helm chart for dyal backend deployment
     digest: 8cf9859facf9448f10f915071aeff9aba6a7cac0a2760263a65bd525844fbfd5
     keywords:
@@ -153,7 +153,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.331614546Z"
+    created: "2026-10-21T07:11:39.33651701Z"
     description: A Helm chart for edgetron deployment
     digest: 0944361d94fe7b0d8b66358de895b03193fdea569d73f33b1f2d0ded19649cbb
     keywords:
@@ -174,7 +174,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.332027097Z"
+    created: "2026-10-21T07:11:39.336773974Z"
     description: A Helm chart for edgetron CRD deployment
     digest: 3dac4889001f4171ce3736b2d3ee4dae614880740fa0be500983c80ca6458a54
     keywords:
@@ -195,7 +195,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.332360368Z"
+    created: "2026-10-21T07:11:39.337001954Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 463f0ff8d7b6e397c7bdde013c00a33362452f24434d93491284fddc13620d24
     keywords:
@@ -216,7 +216,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.332770244Z"
+    created: "2026-10-21T07:11:39.337251607Z"
     description: A Helm chart for edgetron image default deployment
     digest: 5a4bed1e5b97a77f3951edfbb3a9c7d3b07ed3420fe7fc45fd81dd4091258031
     keywords:
@@ -235,7 +235,7 @@ entries:
   kubeeye:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2026-10-21T04:52:56.333460851Z"
+    created: "2026-10-21T07:11:39.337691024Z"
     description: A Helm chart for KubeEye
     digest: 8f3f392d007a01c3d45095f0a1f768cce802dacd97374cd8977ac82f5f4d7720
     name: kubeeye
@@ -248,7 +248,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.336828202Z"
+    created: "2026-10-21T07:11:39.339444024Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -273,7 +273,7 @@ entries:
   kubevirt-xpu-device-plugin:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.337151794Z"
+    created: "2026-10-21T07:11:39.339626607Z"
     description: A Helm chart for kubevirt-xpu-device-plugin
     digest: 04cf1d8a115e006a62f83e78f193356c8d6953a3a665ba383cca6e919885a87a
     maintainers:
@@ -285,10 +285,23 @@ entries:
     urls:
     - kubevirt-xpu-device-plugin-3.5.0.tgz
     version: 3.5.0
+  notification-manager:
+  - apiVersion: v1
+    appVersion: 2.7.0
+    created: "2026-10-21T07:11:39.341661508Z"
+    description: Notification Manager manages notifications in multi-tenant K8s environment.
+      It receives alerts or notifications from different senders and then send notifications
+      to various tenant receivers based on alerts/notifications' tenant label like
+      "namespace".
+    digest: cecff21860770b6e624c258c3da3a0bdac1d35af32abc838ab00b7e9ac6d6d79
+    name: notification-manager
+    urls:
+    - notification-manager-2.7.0.tgz
+    version: 2.7.0
   nvsentinel-capi-remediator:
   - apiVersion: v2
     appVersion: v0.2.1
-    created: "2026-10-21T04:52:56.338730422Z"
+    created: "2026-10-21T07:11:39.342688162Z"
     description: Turns NVSentinel GPU health signals from Cluster API workload clusters
       into Machine remediation on the management cluster.
     digest: 09a35436d278e156f7f66bacf710230dda7d771b2a46a93e54ee5b1368dcff11
@@ -307,7 +320,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-10-21T04:52:56.3383489Z"
+    created: "2026-10-21T07:11:39.342461263Z"
     description: Turns NVSentinel GPU health signals from Cluster API workload clusters
       into Machine remediation on the management cluster.
     digest: a6c7cd74b08779ffce7076fb29629d02812cbcdb44ff5af2c05dffd7352deb1e
@@ -326,7 +339,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-10-21T04:52:56.337975183Z"
+    created: "2026-10-21T07:11:39.342199051Z"
     description: Turns NVSentinel GPU health signals from Cluster API workload clusters
       into Machine remediation on the management cluster.
     digest: 27ff7ae9ec4c72d48eb8ef89c34835366e414f30b4761a05dcc8620082d7b876
@@ -345,7 +358,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: v0.1.0-rc.1
-    created: "2026-10-21T04:52:56.337555328Z"
+    created: "2026-10-21T07:11:39.341958392Z"
     description: Turns NVSentinel GPU health signals from Cluster API workload clusters
       into Machine remediation on the management cluster.
     digest: 47ae18eb6aeacb8a0e999e32dc4a8a395d8262b0394071875c64703f118e2a97
@@ -365,7 +378,7 @@ entries:
   petasus-document:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.338996376Z"
+    created: "2026-10-21T07:11:39.342841171Z"
     description: A Helm chart for Petasus AI Cloud document
     digest: a35e67ec3664f52654e3b9f9e5d95cc561507200b6a9905518bea6193cbf340e
     name: petasus-document
@@ -376,7 +389,7 @@ entries:
   petasus-resource-manager:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.339740604Z"
+    created: "2026-10-21T07:11:39.343307448Z"
     description: A Helm chart for Petasus Resource Manager
     digest: b5c8435efc0c774d5503020f5cac407da75a71a823df319b2bc1611a26ee9694
     name: petasus-resource-manager
@@ -388,7 +401,7 @@ entries:
     version: 3.5.0
   - apiVersion: v2
     appVersion: 3.5.0-cilium
-    created: "2026-10-21T04:52:56.33934212Z"
+    created: "2026-10-21T07:11:39.343062832Z"
     description: A Helm chart for Petasus Resource Manager
     digest: 6416af4211f92934326bd29ede770b42e8325702fbd1938ef6035754cb702842
     name: petasus-resource-manager
@@ -403,7 +416,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: "1.0"
-    created: "2026-10-21T04:52:56.339996589Z"
+    created: "2026-10-21T07:11:39.343456781Z"
     description: A Helm chart for pulley-spider deployment
     digest: 858b2910cb89c9661aad0a39c3cc2debc9914b1b6de9bfb3b6ff36b4895e6c51
     keywords:
@@ -422,7 +435,7 @@ entries:
   rbln-npu-operator:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.343313196Z"
+    created: "2026-10-21T07:11:39.34516435Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -440,7 +453,7 @@ entries:
   vfio-manager:
   - apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-21T04:52:56.343635436Z"
+    created: "2026-10-21T07:11:39.345727239Z"
     description: A Helm chart for VFIO-manager
     digest: b79fd206318247b07795eb115017b104d17496827eb90d373c51df6cc1ad18a7
     maintainers:
@@ -452,4 +465,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-21T04:52:56.307365035Z"
+generated: "2026-10-21T07:11:39.320066489Z"
