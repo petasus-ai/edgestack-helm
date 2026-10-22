@@ -1,2 +1,18 @@
 apiVersion: v1
-entries: {}
+entries:
+  petasus-resource-manager:
+  - annotations:
+      petasus.io/revision: 156a6fd2afc1c107c44baedf69948436f143f092
+    apiVersion: v2
+    appVersion: dev
+    created: "2026-10-22T08:08:22.285687021Z"
+    description: A Helm chart for Petasus Resource Manager
+    digest: 67ab1cda0a4e8abacac52f9e90231467b0be6af6d710a6127be060dce32524fc
+    name: petasus-resource-manager
+    sources:
+    - https://github.com/petasus-ai/petasus-resource-manager
+    type: application
+    urls:
+    - petasus-resource-manager-0.0.0-dev.tgz
+    version: 0.0.0-dev
+generated: "2026-10-22T08:08:22.285127267Z"
