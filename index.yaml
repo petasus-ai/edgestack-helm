@@ -90,12 +90,14 @@ entries:
     - authentik-2025.8.4.tgz
     version: 2025.8.4
   dra-driver-sriov:
-  - apiVersion: v2
-    appVersion: 1e26c63
-    created: "2026-10-22T03:53:10.784720707Z"
+  - annotations:
+      petasus.io/revision: 027f1105824b5ddfa999687b8fc35b5e85ce5e6e
+    apiVersion: v2
+    appVersion: latest
+    created: "2026-10-22T08:27:23.026570547Z"
     description: Helm chart for a Dynamic Resource Allocation (DRA) resource driver
       for SR-IOV devices
-    digest: e81c8a5e6053a9c735105caaf3512c199d8d3f75b6fff2ae6db99be2a1e390b8
+    digest: e3f16e75b9d56873049a50a76ef657531234ee59a4536b699cdd7cdce695be0d
     kubeVersion: '>=1.34.0-0'
     name: dra-driver-sriov
     type: application
@@ -103,12 +105,14 @@ entries:
     - dra-driver-sriov-0.1.0.tgz
     version: 0.1.0
   dra-driver-xpu:
-  - apiVersion: v2
-    appVersion: 1bce1db
-    created: "2026-10-22T03:53:10.785418919Z"
+  - annotations:
+      petasus.io/revision: 0454a12ffef9359c92c48b16667b64f26d5df2b4
+    apiVersion: v2
+    appVersion: main
+    created: "2026-10-22T08:27:23.027217898Z"
     description: Vendor-neutral DRA driver exposing VFIO passthrough and mediated
       devices to KubeVirt VMs
-    digest: 1e675636635280109ca8d9888b7a3a2f6f44a818beef600394a0fd90d7e33bc4
+    digest: 2f77b90b6021851789a2ffdab6f3dc566a84cc6786c2b78c19c51f8c595a049b
     home: https://github.com/petasus-ai/dra-driver-xpu
     keywords:
     - dra
@@ -476,4 +480,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-22T08:25:21.25351093Z"
+generated: "2026-10-22T08:27:23.025858045Z"
