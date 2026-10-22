@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
-"""Check the charts a push changed and index them (run by update-index.yml).
+"""Bring index.yaml in line with the charts on this branch (run by update-index.yml).
 
-master (stable channel): append-only. A chart not listed in .github/unguarded.txt may
-not be modified or deleted; such a change is reverted. 0.0.0-dev charts belong on dev and
-are removed. index.yaml is updated for the changed files only (helm repo index --merge),
-so the other entries keep their digest and creation time; a deletion (an unguarded chart)
-reindexes everything.
+The whole branch is compared with its index on every run, so a run that was cancelled or
+lost a push race leaves nothing behind: the next one finds it.
 
-dev (dev channel): only 0.0.0-dev charts, which may be overwritten; anything else is
-removed. index.yaml is rebuilt.
+master (stable channel), append-only:
+  - a chart file the index does not list yet is added to it;
+  - a chart file whose digest differs from its index entry, or an entry whose file is
+    gone, is a change to a published version: a chart listed in .github/unguarded.txt
+    (still republished under one version by its repository) is indexed again; any other
+    is restored from history to the contents its index entry names;
+  - a 0.0.0-dev chart belongs on dev and is removed.
+  New and changed entries are merged into the index (helm repo index --merge), so the
+  others keep their creation time; a removed entry reindexes everything.
+dev (dev channel): 0.0.0-dev charts only, anything else is removed; the index is rebuilt
+  when it does not list exactly the files there.
 
-The fixes and the index go in one commit, pushed with retries; the run fails if
-anything had to be reverted or removed.
+Exits 1 when something had to be restored or removed; the caller commits either way.
 """
+import hashlib
 import io
 import os
 import subprocess
@@ -22,13 +28,11 @@ import tempfile
 
 import yaml
 
-EMPTY_TREE = "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
 DEV = "0.0.0-dev"
 
 
-def git(*args, capture=True):
-    out = subprocess.run(["git", *args], check=True, capture_output=capture)
-    return out.stdout if capture else None
+def git(*args):
+    return subprocess.run(["git", *args], check=True, capture_output=True).stdout
 
 
 def chart_meta(data):
@@ -41,10 +45,23 @@ def chart_meta(data):
     raise ValueError("no Chart.yaml")
 
 
+def restore(path, digest):
+    """put back the contents of path whose sha256 is digest, from the branch's history"""
+    for commit in git("log", "--format=%H", "--", path).decode().split():
+        try:
+            data = git("show", f"{commit}:{path}")
+        except subprocess.CalledProcessError:
+            continue
+        if hashlib.sha256(data).hexdigest() == digest:
+            with open(path, "wb") as f:
+                f.write(data)
+            git("add", "--", path)
+            return True
+    return False
+
+
 def main():
     branch = os.environ["BRANCH"]
-    before = os.environ.get("BEFORE", "")
-    base = before if before and set(before) != {"0"} else EMPTY_TREE
     unguarded = set()
     if os.path.exists(".github/unguarded.txt"):
         for line in open(".github/unguarded.txt"):
@@ -52,51 +69,65 @@ def main():
             if line:
                 unguarded.add(line)
 
-    changes = []
-    for line in git("diff", "--name-status", "--no-renames", base, "HEAD", "--", "*.tgz").decode().splitlines():
-        status, path = line.split("\t", 1)
-        changes.append((status[0], path))
+    index = yaml.safe_load(open("index.yaml")) if os.path.exists("index.yaml") else {}
+    listed = {}  # file -> (name, version, digest)
+    for name, entries in ((index or {}).get("entries") or {}).items():
+        for e in entries:
+            for url in e.get("urls", []):
+                listed[os.path.basename(url)] = (name, str(e["version"]), e.get("digest", ""))
 
-    problems, indexed = [], []
-    for status, path in changes:
-        if status == "D":
-            name, version = chart_meta(git("show", f"{base}:{path}"))
-        else:
-            name, version = chart_meta(open(path, "rb").read())
-        if branch == "dev":
-            if status != "D" and version != DEV:
+    files = {}
+    for path in sorted(p for p in os.listdir(".") if p.endswith(".tgz")):
+        data = open(path, "rb").read()
+        files[path] = (*chart_meta(data), hashlib.sha256(data).hexdigest())
+
+    problems, merge, reindex_all = [], [], False
+
+    if branch == "dev":
+        for path, (name, version, _) in files.items():
+            if version != DEV:
                 problems.append(f"{path}: {name} {version} on dev, which takes {DEV} only; removed")
-                git("rm", "-q", "--", path, capture=False)
-                continue
-        else:
-            if status == "A" and version == DEV:
+                git("rm", "-q", "--", path)
+        kept = {p: v for p, v in files.items() if v[1] == DEV}
+        reindex_all = {p: v[2] for p, v in kept.items()} != {p: v[2] for p, v in listed.items()}
+    else:
+        for path, (name, version, digest) in files.items():
+            if version == DEV:
                 problems.append(f"{path}: {DEV} belongs on the dev branch; removed")
-                git("rm", "-q", "--", path, capture=False)
+                git("rm", "-q", "--", path)
+            elif path not in listed:
+                merge.append(path)
+            elif listed[path][2] != digest:
+                if name in unguarded:
+                    merge.append(path)
+                elif restore(path, listed[path][2]):
+                    problems.append(f"{path}: {name} {version} is published and does not change; restored")
+                else:
+                    problems.append(f"{path}: {name} {version} changed and its published contents are not in history")
+        for path, (name, version, digest) in listed.items():
+            if path in files:
                 continue
-            if status in "MD" and name not in unguarded:
-                problems.append(f"{path}: {name} {version} is published and does not change; restored")
-                git("checkout", base, "--", path, capture=False)
-                continue
-        if status != "D":
-            indexed.append(path)
+            if name in unguarded:
+                reindex_all = True
+            elif restore(path, digest):
+                problems.append(f"{path}: {name} {version} is published and stays; restored")
+            else:
+                problems.append(f"{path}: {name} {version} is gone and its contents are not in history")
+                reindex_all = True
 
-    deleted = any(status == "D" for status, _ in changes)
-    if branch == "dev" or deleted or not os.path.exists("index.yaml"):
-        # dev, or an unguarded chart was deleted: index every file again (the creation
-        # times are renewed; the digests stay)
+    if reindex_all or not os.path.exists("index.yaml"):
         subprocess.run(["helm", "repo", "index", "."], check=True)
-    elif indexed:
+    elif merge:
         with tempfile.TemporaryDirectory() as tmp:
-            for path in indexed:
-                os.link(path, os.path.join(tmp, os.path.basename(path)))
-            # the new entries win over the old ones of the same version (an unguarded
-            # chart republished); all others are kept as they are
+            for path in merge:
+                os.link(path, os.path.join(tmp, path))
+            # the new entries win over the old ones of the same version
             subprocess.run(["helm", "repo", "index", tmp, "--merge", "index.yaml"], check=True)
             os.replace(os.path.join(tmp, "index.yaml"), "index.yaml")
 
     for p in problems:
         print(f"::error::{p}")
-    print(f"{len(indexed)} charts indexed on {branch}; {len(problems)} rejected")
+    print(f"{branch}: {len(merge)} merged, full reindex {reindex_all}, {len(problems)} rejected")
     return 1 if problems else 0
 
 
