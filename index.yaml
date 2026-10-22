@@ -387,11 +387,13 @@ entries:
     - nvsentinel-capi-remediator-0.1.0-rc.1.tgz
     version: 0.1.0-rc.1
   petasus-document:
-  - apiVersion: v2
+  - annotations:
+      petasus.io/revision: ece5d5693f4be4d34bbe4a497da62b81e3548ec4
+    apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-10-22T03:53:10.795016168Z"
+    created: "2026-10-22T08:32:51.415774169Z"
     description: A Helm chart for Petasus AI Cloud document
-    digest: a35e67ec3664f52654e3b9f9e5d95cc561507200b6a9905518bea6193cbf340e
+    digest: c36082b5f1d8478a7ef4d8f80a75febe66c3496009c2c700c4618f8735361cf5
     name: petasus-document
     type: application
     urls:
@@ -480,4 +482,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-22T08:27:23.025858045Z"
+generated: "2026-10-22T08:32:51.415373441Z"
