@@ -6,7 +6,7 @@ entries:
       petasus.io/revision: eba64c0ed97193b691f20f666967b610989801bc
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:19.227982897Z"
+    created: "2026-10-22T08:22:40.570576629Z"
     description: A Helm chart for edgetron deployment
     digest: 2f418d194e26638c6d5472fe33c07d9ac7038d8cef77b92d2539097b9a23c768
     keywords:
@@ -28,7 +28,7 @@ entries:
       petasus.io/revision: e3fbcda7e665eae4c9ff608468cd7d2e8f2fd784
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:19.22828243Z"
+    created: "2026-10-22T08:22:40.570764624Z"
     description: A Helm chart for edgetron CRD deployment
     digest: f7168faa8e5a0979d0c10106a1038c9491951fef33b10fbc4a5d087571f73aca
     keywords:
@@ -50,7 +50,7 @@ entries:
       petasus.io/revision: 78ce453e6c27ba46d89bb908d72e7ad5cd454aaa
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:19.229322215Z"
+    created: "2026-10-22T08:22:40.570941281Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: a5c57ca9ca5d7185ffeb2f9e31ef2ea6f8c23884e69bed9d1166d2ca1b4b6d41
     keywords:
@@ -72,7 +72,7 @@ entries:
       petasus.io/revision: 22126465843aba53bffab36740dd8b1bcb0780e5
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:19.229768584Z"
+    created: "2026-10-22T08:22:40.571111989Z"
     description: A Helm chart for edgetron image default deployment
     digest: 0735a4e8a422691d90af311fafb7af6c87767d1fdd5ee103f4f05ef7ce0194c9
     keywords:
@@ -94,7 +94,7 @@ entries:
       petasus.io/revision: 2193e50b87fdaa96142010b9a16a8f61fb918efb
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:19.231662524Z"
+    created: "2026-10-22T08:22:40.572863473Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -116,12 +116,29 @@ entries:
     urls:
     - kubevirt-cni-0.0.0-dev.tgz
     version: 0.0.0-dev
+  kubevirt-xpu-device-plugin:
+  - annotations:
+      petasus.io/revision: 77764af480efef7ed3ac9acdbacfa668a144cb4d
+    apiVersion: v1
+    appVersion: dev
+    created: "2026-10-22T08:22:40.573008903Z"
+    description: A Helm chart for kubevirt-xpu-device-plugin
+    digest: 486036517938cd820bcbd8a4aaef70586490f2a5c0dc119d65cab3ce22b44d6f
+    maintainers:
+    - email: pyguni@gmail.com
+      name: Jian Li
+    name: kubevirt-xpu-device-plugin
+    sources:
+    - https://github.com/edgestack/kubevirt-xpu-device-plugin
+    urls:
+    - kubevirt-xpu-device-plugin-0.0.0-dev.tgz
+    version: 0.0.0-dev
   petasus-resource-manager:
   - annotations:
       petasus.io/revision: 156a6fd2afc1c107c44baedf69948436f143f092
     apiVersion: v2
     appVersion: dev
-    created: "2026-10-22T08:22:19.232072545Z"
+    created: "2026-10-22T08:22:40.573217369Z"
     description: A Helm chart for Petasus Resource Manager
     digest: 67ab1cda0a4e8abacac52f9e90231467b0be6af6d710a6127be060dce32524fc
     name: petasus-resource-manager
@@ -131,4 +148,4 @@ entries:
     urls:
     - petasus-resource-manager-0.0.0-dev.tgz
     version: 0.0.0-dev
-generated: "2026-10-22T08:22:19.227099497Z"
+generated: "2026-10-22T08:22:40.570047238Z"
