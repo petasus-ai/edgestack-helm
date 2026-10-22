@@ -249,15 +249,16 @@ entries:
   kubevirt-cni:
   - annotations:
       category: Infrastructure
+      petasus.io/revision: 2193e50b87fdaa96142010b9a16a8f61fb918efb
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-22T03:53:10.790008962Z"
+    created: "2026-10-22T08:22:22.240159376Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
       version: 0.1.0
     description: A Helm chart for Kubevirt-CNI deployment
-    digest: 831a2534ea58273ae30a48700329cc0c67339a659bc5804793a0c6561b5e7458
+    digest: a80017d0ecc9a0e87a8d10241cee2cb9891485f2ad7a0ce00c76e48ebb365b5e
     home: https://wiki.onosproject.org/display/ONOS/SONA%3A+DC+Network+Virtualization
     keywords:
     - MEC
@@ -470,4 +471,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-22T08:22:07.755046128Z"
+generated: "2026-10-22T08:22:22.237991404Z"
