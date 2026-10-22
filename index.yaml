@@ -134,12 +134,12 @@ entries:
   dyal:
   - annotations:
       category: Infrastructure
-      petasus.io/revision: 4569ad0cd7cf02f770611508f0b39d13cec13dfe
+      petasus.io/revision: 9cbea9f5e6724f06decb3a575216ccd75d6df8c0
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-22T08:25:21.253931949Z"
+    created: "2026-10-22T08:45:16.369667538Z"
     description: A Helm chart for dyal backend deployment
-    digest: 6a8e183a4c5855f74f6a270d223e7ab49ffc2f6da575f7aa655747a6283d0118
+    digest: 3bb2756e6a5008f0ff5795f7c9e08dcd8463909102a3d94a57b705e67023ace4
     keywords:
     - AI
     - infiniband
@@ -482,4 +482,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-22T08:32:51.415373441Z"
+generated: "2026-10-22T08:45:16.369333037Z"
