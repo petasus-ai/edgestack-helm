@@ -130,11 +130,12 @@ entries:
   dyal:
   - annotations:
       category: Infrastructure
+      petasus.io/revision: 4569ad0cd7cf02f770611508f0b39d13cec13dfe
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-22T03:53:10.785728605Z"
+    created: "2026-10-22T08:25:21.253931949Z"
     description: A Helm chart for dyal backend deployment
-    digest: 8cf9859facf9448f10f915071aeff9aba6a7cac0a2760263a65bd525844fbfd5
+    digest: 6a8e183a4c5855f74f6a270d223e7ab49ffc2f6da575f7aa655747a6283d0118
     keywords:
     - AI
     - infiniband
@@ -459,11 +460,13 @@ entries:
     - rbln-npu-operator-3.5.0.tgz
     version: 3.5.0
   vfio-manager:
-  - apiVersion: v1
+  - annotations:
+      petasus.io/revision: 8876423aec5e0070b288e1508f316d2b36fdbfc1
+    apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-22T03:53:10.799624723Z"
+    created: "2026-10-22T08:25:21.254196144Z"
     description: A Helm chart for VFIO-manager
-    digest: b79fd206318247b07795eb115017b104d17496827eb90d373c51df6cc1ad18a7
+    digest: 0c7590a06904055a05c2b8a388b128648ded0a44ad718c5eaf546e89fdc367b0
     maintainers:
     - email: changju.gim@sk.com
       name: Changju Kim
@@ -473,4 +476,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-22T08:22:44.760023559Z"
+generated: "2026-10-22T08:25:21.25351093Z"
