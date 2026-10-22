@@ -1,12 +1,34 @@
 apiVersion: v1
 entries:
+  dyal:
+  - annotations:
+      category: Infrastructure
+      petasus.io/revision: 4569ad0cd7cf02f770611508f0b39d13cec13dfe
+    apiVersion: v1
+    appVersion: dev
+    created: "2026-10-22T08:25:24.018452531Z"
+    description: A Helm chart for dyal backend deployment
+    digest: d5a029025e205b7f8b445367705ce896cde4ab81d44f3d55349ae6a41e3ff866
+    keywords:
+    - AI
+    - infiniband
+    - clustering
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: dyal
+    sources:
+    - https://github.com/petasus-ai/dyal-backend
+    urls:
+    - dyal-0.0.0-dev.tgz
+    version: 0.0.0-dev
   edgetron:
   - annotations:
       category: Infrastructure
       petasus.io/revision: eba64c0ed97193b691f20f666967b610989801bc
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:40.570576629Z"
+    created: "2026-10-22T08:25:24.019050397Z"
     description: A Helm chart for edgetron deployment
     digest: 2f418d194e26638c6d5472fe33c07d9ac7038d8cef77b92d2539097b9a23c768
     keywords:
@@ -28,7 +50,7 @@ entries:
       petasus.io/revision: e3fbcda7e665eae4c9ff608468cd7d2e8f2fd784
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:40.570764624Z"
+    created: "2026-10-22T08:25:24.019404226Z"
     description: A Helm chart for edgetron CRD deployment
     digest: f7168faa8e5a0979d0c10106a1038c9491951fef33b10fbc4a5d087571f73aca
     keywords:
@@ -50,7 +72,7 @@ entries:
       petasus.io/revision: 78ce453e6c27ba46d89bb908d72e7ad5cd454aaa
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:40.570941281Z"
+    created: "2026-10-22T08:25:24.019694644Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: a5c57ca9ca5d7185ffeb2f9e31ef2ea6f8c23884e69bed9d1166d2ca1b4b6d41
     keywords:
@@ -72,7 +94,7 @@ entries:
       petasus.io/revision: 22126465843aba53bffab36740dd8b1bcb0780e5
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:40.571111989Z"
+    created: "2026-10-22T08:25:24.020004516Z"
     description: A Helm chart for edgetron image default deployment
     digest: 0735a4e8a422691d90af311fafb7af6c87767d1fdd5ee103f4f05ef7ce0194c9
     keywords:
@@ -94,7 +116,7 @@ entries:
       petasus.io/revision: 2193e50b87fdaa96142010b9a16a8f61fb918efb
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:40.572863473Z"
+    created: "2026-10-22T08:25:24.022839849Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -121,7 +143,7 @@ entries:
       petasus.io/revision: 77764af480efef7ed3ac9acdbacfa668a144cb4d
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-22T08:22:40.573008903Z"
+    created: "2026-10-22T08:25:24.023070091Z"
     description: A Helm chart for kubevirt-xpu-device-plugin
     digest: 486036517938cd820bcbd8a4aaef70586490f2a5c0dc119d65cab3ce22b44d6f
     maintainers:
@@ -138,7 +160,7 @@ entries:
       petasus.io/revision: 156a6fd2afc1c107c44baedf69948436f143f092
     apiVersion: v2
     appVersion: dev
-    created: "2026-10-22T08:22:40.573217369Z"
+    created: "2026-10-22T08:25:24.023470632Z"
     description: A Helm chart for Petasus Resource Manager
     digest: 67ab1cda0a4e8abacac52f9e90231467b0be6af6d710a6127be060dce32524fc
     name: petasus-resource-manager
@@ -148,4 +170,21 @@ entries:
     urls:
     - petasus-resource-manager-0.0.0-dev.tgz
     version: 0.0.0-dev
-generated: "2026-10-22T08:22:40.570047238Z"
+  vfio-manager:
+  - annotations:
+      petasus.io/revision: 8876423aec5e0070b288e1508f316d2b36fdbfc1
+    apiVersion: v1
+    appVersion: dev
+    created: "2026-10-22T08:25:24.023720559Z"
+    description: A Helm chart for VFIO-manager
+    digest: d18c4d5715079da086a6d4ba24dd16133b3db0809de2b1dbdd045ab95ade4aa1
+    maintainers:
+    - email: changju.gim@sk.com
+      name: Changju Kim
+    name: vfio-manager
+    sources:
+    - https://github.com/edgestack/edgetron
+    urls:
+    - vfio-manager-0.0.0-dev.tgz
+    version: 0.0.0-dev
+generated: "2026-10-22T08:25:24.018033228Z"
