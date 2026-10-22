@@ -1,33 +1,59 @@
 name: Update Index
 
+# Both channels run this file from their own branch: master (stable, append-only) and dev
+# (0.0.0-dev charts only). Keep the two copies the same. The checks and the indexing are
+# in .github/scripts/update-index.py.
 on:
   push:
-    branches: [ master ]
+    branches: [master, dev]
     paths:
       - '**.tgz'
+      - '.github/unguarded.txt'
 
 permissions:
   contents: write
 
+concurrency:
+  group: index-${{ github.ref_name }}
+  cancel-in-progress: false
+
 jobs:
-  build:
+  index:
     runs-on: ubuntu-latest
     steps:
-      - name: Git Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
-          persist-credentials: true  # This is true by default, but good to be explicit.
-      - name: Helm Installation
-        uses: azure/setup-helm@v1.1
+          fetch-depth: 0
+      - uses: azure/setup-helm@v4
         with:
-          version: v3.7.0
-      - name: Update Index
+          version: v3.18.4
+      - name: Check and index the charts this push changed
+        id: index
+        env:
+          BEFORE: ${{ github.event.before }}
+          BRANCH: ${{ github.ref_name }}
         run: |
-          helm repo index .
-          git config --global user.email "edgestack-bot@users.noreply.github.com"
-          git config --global user.name "edgestack-bot"
-          git add index.yaml
-          git commit -m "Update chart index"
-          # Update the remote URL to include the token
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git push
+          pip install -q pyyaml
+          set +e
+          python3 .github/scripts/update-index.py
+          echo "rc=$?" >> "$GITHUB_OUTPUT"
+      - name: Commit and push
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.email "edgestack-bot@users.noreply.github.com"
+          git config user.name "edgestack-bot"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -q -m "Update chart index"
+            for i in 1 2 3 4 5; do
+              git push origin "HEAD:$BRANCH" && break
+              sleep $((i * 3))
+              git pull -q --rebase origin "$BRANCH"
+            done
+          fi
+      - name: Fail on rejected charts
+        if: steps.index.outputs.rc != '0'
+        run: exit 1

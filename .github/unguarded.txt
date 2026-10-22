@@ -1,0 +1,20 @@
+# Charts still republished under the same version (3.5.0, 0.1.0, ...) by their
+# repositories. update-index.yml lets these be overwritten or deleted on master; every
+# other chart is append-only there, so a published version never changes. Remove a chart
+# from this list once its repository publishes through publish-chart (dev channel on its
+# main branch, a new version for each release); for the v3.5.0 components that is right
+# after their v3.5.0 release republishes 3.5.0 one last time.
+authentik
+dra-driver-sriov
+dra-driver-xpu
+dyal
+edgetron
+edgetron-crd
+edgetron-crd-default
+edgetron-image-default
+kubevirt-cni
+kubevirt-xpu-device-plugin
+petasus-document
+petasus-resource-manager
+pulley-spider
+vfio-manager
