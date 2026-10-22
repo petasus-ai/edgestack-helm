@@ -1,59 +1,66 @@
 name: Update Index
 
-# Both channels run this file from their own branch: master (stable, append-only) and dev
-# (0.0.0-dev charts only). Keep the two copies the same. The checks and the indexing are
-# in .github/scripts/update-index.py.
+# Brings each channel's index.yaml in line with its charts: master (stable, append-only)
+# and dev (0.0.0-dev only); see .github/scripts/update-index.py. Every run compares the
+# whole branch with its index, so a push whose run was cancelled is caught by the next
+# one, and the hourly run catches anything left over. Both branches carry this file and
+# the script; keep the copies the same.
 on:
   push:
     branches: [master, dev]
     paths:
       - '**.tgz'
       - '.github/unguarded.txt'
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch: {}
 
 permissions:
   contents: write
 
-concurrency:
-  group: index-${{ github.ref_name }}
-  cancel-in-progress: false
-
 jobs:
   index:
+    strategy:
+      fail-fast: false
+      matrix:
+        branch: ${{ fromJSON(github.event_name == 'push' && format('["{0}"]', github.ref_name) || '["master","dev"]') }}
+    concurrency:
+      group: index-${{ matrix.branch }}
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ matrix.branch }}
           fetch-depth: 0
       - uses: azure/setup-helm@v4
         with:
           version: v3.18.4
-      - name: Check and index the charts this push changed
-        id: index
+      - name: Reconcile the index, commit and push
         env:
-          BEFORE: ${{ github.event.before }}
-          BRANCH: ${{ github.ref_name }}
+          BRANCH: ${{ matrix.branch }}
         run: |
           pip install -q pyyaml
-          set +e
-          python3 .github/scripts/update-index.py
-          echo "rc=$?" >> "$GITHUB_OUTPUT"
-      - name: Commit and push
-        env:
-          BRANCH: ${{ github.ref_name }}
-        run: |
           git config user.email "edgestack-bot@users.noreply.github.com"
           git config user.name "edgestack-bot"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "nothing to commit"
-          else
+          status=0
+          # A chart pushed meanwhile moves the branch: start again from its new head.
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin "$BRANCH"
+            git reset -q --hard "origin/$BRANCH"
+            set +e
+            python3 .github/scripts/update-index.py
+            status=$?
+            set -e
+            git add -A
+            if git diff --cached --quiet; then
+              echo "index.yaml is current"
+              break
+            fi
             git commit -q -m "Update chart index"
-            for i in 1 2 3 4 5; do
-              git push origin "HEAD:$BRANCH" && break
-              sleep $((i * 3))
-              git pull -q --rebase origin "$BRANCH"
-            done
-          fi
-      - name: Fail on rejected charts
-        if: steps.index.outputs.rc != '0'
-        run: exit 1
+            if git push -q origin "HEAD:$BRANCH"; then
+              break
+            fi
+            sleep $((attempt * 3))
+          done
+          exit $status
