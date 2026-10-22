@@ -387,11 +387,13 @@ entries:
     - petasus-document-3.5.0.tgz
     version: 3.5.0
   petasus-resource-manager:
-  - apiVersion: v2
+  - annotations:
+      petasus.io/revision: 156a6fd2afc1c107c44baedf69948436f143f092
+    apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-10-22T03:53:10.79574799Z"
+    created: "2026-10-22T08:08:25.012961567Z"
     description: A Helm chart for Petasus Resource Manager
-    digest: b5c8435efc0c774d5503020f5cac407da75a71a823df319b2bc1611a26ee9694
+    digest: 36bc0cdda552ba6999c6952f631ff36b496c660986fd0d37947c6256536bdbf7
     name: petasus-resource-manager
     sources:
     - https://github.com/petasus-ai/petasus-resource-manager
@@ -465,4 +467,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-22T03:53:10.76348135Z"
+generated: "2026-10-22T08:08:25.012567636Z"
