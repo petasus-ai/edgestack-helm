@@ -21,6 +21,7 @@ Exits 1 when something had to be restored or removed; the caller commits either 
 import hashlib
 import io
 import os
+import shutil
 import subprocess
 import sys
 import tarfile
@@ -120,7 +121,8 @@ def main():
     elif merge:
         with tempfile.TemporaryDirectory() as tmp:
             for path in merge:
-                os.link(path, os.path.join(tmp, path))
+                # a copy: the runner's temporary directory is on another file system
+                shutil.copy(path, os.path.join(tmp, path))
             # the new entries win over the old ones of the same version
             subprocess.run(["helm", "repo", "index", tmp, "--merge", "index.yaml"], check=True)
             os.replace(os.path.join(tmp, "index.yaml"), "index.yaml")
