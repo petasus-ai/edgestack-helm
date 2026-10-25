@@ -121,11 +121,12 @@ def main():
     elif merge:
         with tempfile.TemporaryDirectory() as tmp:
             for path in merge:
-                # a copy: the runner's temporary directory is on another file system
+                # copies, here and below: the runner's temporary directory is on another file
+                # system, where links and renames fail
                 shutil.copy(path, os.path.join(tmp, path))
             # the new entries win over the old ones of the same version
             subprocess.run(["helm", "repo", "index", tmp, "--merge", "index.yaml"], check=True)
-            os.replace(os.path.join(tmp, "index.yaml"), "index.yaml")
+            shutil.copyfile(os.path.join(tmp, "index.yaml"), "index.yaml")
 
     for p in problems:
         print(f"::error::{p}")
