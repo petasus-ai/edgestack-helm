@@ -156,11 +156,12 @@ entries:
   edgetron:
   - annotations:
       category: Infrastructure
+      petasus.io/revision: c168fca4bd23b0a7f84e16dd2c70b2fa976862bb
     apiVersion: v1
     appVersion: 3.5.0
-    created: "2026-10-22T08:19:05.323100039Z"
+    created: "2026-10-25T02:31:05.397068414Z"
     description: A Helm chart for edgetron deployment
-    digest: bf0f781708abeb4376d42ca73a1abd9385a601e75c945718a150eaad5fd10e12
+    digest: eaa9ae8e60df5a5c32fb0cbbb0f07caff99692d75d82307e2f93b85eb448aa80
     keywords:
     - mec
     - cluster api
@@ -482,4 +483,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-22T08:45:16.369333037Z"
+generated: "2026-10-25T02:31:05.396156471Z"
