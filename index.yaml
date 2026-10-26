@@ -174,6 +174,28 @@ entries:
     urls:
     - dyal-1.0.0.tgz
     version: 1.0.0
+  edgetron:
+  - annotations:
+      category: Infrastructure
+      petasus.io/revision: 932166efe11f4a109b83b8c96b82f4ec23dfb9cf
+    apiVersion: v1
+    appVersion: v3.5.0
+    created: "2026-10-26T05:19:26.670501043Z"
+    description: A Helm chart for edgetron deployment
+    digest: 4bd2ef9e0d35b9ece5b88462406ba4611044f67e1ad6920b3cc9e7738b0bbe39
+    keywords:
+    - mec
+    - cluster api
+    - provision
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: edgetron
+    sources:
+    - https://github.com/edgestack/edgetron
+    urls:
+    - edgetron-3.5.0.tgz
+    version: 3.5.0
   edgetron-crd:
   - annotations:
       category: Infrastructure
@@ -496,4 +518,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T05:15:28.819504335Z"
+generated: "2026-10-26T05:19:26.669754454Z"
