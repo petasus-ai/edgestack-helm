@@ -243,12 +243,12 @@ entries:
   edgetron-image-default:
   - annotations:
       category: Infrastructure
-      petasus.io/revision: 22126465843aba53bffab36740dd8b1bcb0780e5
+      petasus.io/revision: cea860aff817086088147ba47978a85a823fae77
     apiVersion: v1
-    appVersion: 3.5.0
-    created: "2026-10-22T08:22:07.7555067Z"
+    appVersion: v3.5.0
+    created: "2026-10-26T02:51:49.920014954Z"
     description: A Helm chart for edgetron image default deployment
-    digest: a3e60a1b49b2dc0855fdabb0c6b948bb1d1cbfc2dc850394fa6261c808f03f13
+    digest: e217fc77aadb9c247aa84efcd87e5b0a78d7a20957330ad373dd8797a8c2c7b2
     keywords:
     - mec
     - kubevirt
@@ -504,4 +504,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T02:51:27.611880845Z"
+generated: "2026-10-26T02:51:49.91955686Z"
