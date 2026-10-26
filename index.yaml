@@ -212,6 +212,27 @@ entries:
     version: 3.5.0
   - annotations:
       category: Infrastructure
+      petasus.io/revision: 8fcd986bc57bb29f6c852f1f1a24804a32470bde
+    apiVersion: v1
+    appVersion: v3.5.0-rc.2
+    created: "2026-10-26T08:11:15.748611133Z"
+    description: A Helm chart for edgetron deployment
+    digest: 4e3ae28a48219eda1644f78449ec5ddf0bdd6d58d39d878aace9e3b562ad012d
+    keywords:
+    - mec
+    - cluster api
+    - provision
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: edgetron
+    sources:
+    - https://github.com/edgestack/edgetron
+    urls:
+    - edgetron-3.5.0-rc.2.tgz
+    version: 3.5.0-rc.2
+  - annotations:
+      category: Infrastructure
       petasus.io/revision: 932166efe11f4a109b83b8c96b82f4ec23dfb9cf
     apiVersion: v1
     appVersion: v3.5.0-rc.1
@@ -603,4 +624,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T07:46:57.278361265Z"
+generated: "2026-10-26T08:11:15.74769677Z"
