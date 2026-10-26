@@ -389,12 +389,12 @@ entries:
     version: 0.1.0-rc.1
   petasus-document:
   - annotations:
-      petasus.io/revision: ece5d5693f4be4d34bbe4a497da62b81e3548ec4
+      petasus.io/revision: 57e9d01541b8bf495776222509acdca11636d6b8
     apiVersion: v2
-    appVersion: 3.5.0
-    created: "2026-10-22T08:32:51.415774169Z"
+    appVersion: v3.5.0
+    created: "2026-10-26T02:25:53.723922636Z"
     description: A Helm chart for Petasus AI Cloud document
-    digest: c36082b5f1d8478a7ef4d8f80a75febe66c3496009c2c700c4618f8735361cf5
+    digest: c7e142b2950ecf419c303e173001879e8770f15528ade62f38d31796c4207cc1
     name: petasus-document
     type: application
     urls:
@@ -483,4 +483,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-25T02:31:05.396156471Z"
+generated: "2026-10-26T02:25:53.723566923Z"
