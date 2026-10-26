@@ -199,12 +199,12 @@ entries:
   edgetron-crd:
   - annotations:
       category: Infrastructure
-      petasus.io/revision: e3fbcda7e665eae4c9ff608468cd7d2e8f2fd784
+      petasus.io/revision: aa33da3281993d9602ddb1cf7e17411b762bab86
     apiVersion: v1
-    appVersion: 3.5.0
-    created: "2026-10-22T08:20:45.471652462Z"
+    appVersion: v3.5.0
+    created: "2026-10-26T02:51:27.612268133Z"
     description: A Helm chart for edgetron CRD deployment
-    digest: 4b0a98ff808fa2a9b4ab9c158ce969fb1c0171562f358160cfc28ca3c3f30df6
+    digest: 96c47efa17f35ec35b7e92e4ef46e57f353b0bae7de946a7e1202d23b6dcd8e7
     keywords:
     - mec
     - kubevirt
@@ -504,4 +504,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T02:49:27.849401495Z"
+generated: "2026-10-26T02:51:27.611880845Z"
