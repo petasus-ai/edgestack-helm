@@ -421,6 +421,20 @@ entries:
     urls:
     - petasus-document-3.5.0.tgz
     version: 3.5.0
+  petasus-kubesphere:
+  - annotations:
+      petasus.io/revision: 5706d0a03ed5ac7f8f46b98c56ca5c43f308eae9
+    apiVersion: v2
+    appVersion: v3.5.0
+    created: "2026-10-26T05:19:50.405388792Z"
+    description: KubeSphere core (ks-apiserver, ks-controller-manager, ks-console)
+      for the Petasus hub
+    digest: f4fa02e0739082b92d5b07afe964cd77733452eb1a19ab050bcd3203a2d9ce76
+    name: petasus-kubesphere
+    type: application
+    urls:
+    - petasus-kubesphere-3.5.0.tgz
+    version: 3.5.0
   petasus-resource-manager:
   - annotations:
       petasus.io/revision: f56c427aefd5b2fd031522619d8f918e8e851a55
@@ -518,4 +532,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T05:19:26.669754454Z"
+generated: "2026-10-26T05:19:50.403686856Z"
