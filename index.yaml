@@ -532,4 +532,28 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T07:41:05.524890177Z"
+  virtvnc:
+  - annotations:
+      category: Infrastructure
+      petasus.io/revision: 8f1bf027ac7fe7d4f6c747fb89b246e0d3e01a39
+    apiVersion: v1
+    appVersion: v3.5.0
+    created: "2026-10-26T07:41:30.501213147Z"
+    description: A Helm chart for virtvnc deployment
+    digest: 24f1f968339a98f6bd926deebbd726277243cf3fdd1df877ac9e3e72c195888e
+    home: https://github.com/petasus-ai/kubevirt-novnc
+    keywords:
+    - MEC
+    - SDN
+    - Kubevirt
+    - Kubernetes
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: virtvnc
+    sources:
+    - https://github.com/petasus-ai/kubevirt-novnc
+    urls:
+    - virtvnc-3.5.0.tgz
+    version: 3.5.0
+generated: "2026-10-26T07:41:30.500788302Z"
