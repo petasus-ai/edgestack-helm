@@ -7,7 +7,6 @@
 authentik
 dra-driver-sriov
 dra-driver-xpu
-dyal
 edgetron
 edgetron-crd
 edgetron-crd-default
