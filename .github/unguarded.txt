@@ -5,8 +5,6 @@
 # main branch, a new version for each release); for the v3.5.0 components that is right
 # after their v3.5.0 release republishes 3.5.0 one last time.
 authentik
-dra-driver-sriov
-dra-driver-xpu
 kubevirt-xpu-device-plugin
 petasus-resource-manager
 pulley-spider
