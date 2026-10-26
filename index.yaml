@@ -290,16 +290,16 @@ entries:
   kubevirt-cni:
   - annotations:
       category: Infrastructure
-      petasus.io/revision: 4ac6adf62c847de867d6bdaf5bda077de74de1b4
+      petasus.io/revision: ecb094c2213bf1c231b0840391d2aae0785bfc30
     apiVersion: v1
     appVersion: v3.5.0
-    created: "2026-10-26T07:40:04.07829413Z"
+    created: "2026-10-26T07:41:05.527059677Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
       version: 0.1.0
     description: A Helm chart for Kubevirt-CNI deployment
-    digest: eabfbf4e9dc344ba4724983638623ff69e8452c217bdb7a3f23eb6720204e241
+    digest: 5c8e7d7c275a45e7ca336593b793a66550e9b2a1f0f68b86806c5551945650f6
     home: https://wiki.onosproject.org/display/ONOS/SONA%3A+DC+Network+Virtualization
     keywords:
     - MEC
@@ -517,12 +517,12 @@ entries:
     version: 3.5.0
   vfio-manager:
   - annotations:
-      petasus.io/revision: e832ce5abedada400354a86caa527e42c4d9586c
+      petasus.io/revision: c0580c42862bd748429ea98ceda1ec18175be342
     apiVersion: v1
     appVersion: v3.5.0
-    created: "2026-10-26T07:40:04.08629613Z"
+    created: "2026-10-26T07:41:05.527343319Z"
     description: A Helm chart for VFIO-manager
-    digest: 81b10fea5595f01c3f1b1bddf1ed62af92d6102189ba1300eafaa45828c410bd
+    digest: cefdcb9bd827fb7dd89a1ed3b7907082e2057248281216854ab29d673216e7cc
     maintainers:
     - email: changju.gim@sk.com
       name: Changju Kim
@@ -532,4 +532,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T07:40:04.051306611Z"
+generated: "2026-10-26T07:41:05.524890177Z"
