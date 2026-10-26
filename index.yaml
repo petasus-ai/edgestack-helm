@@ -153,6 +153,27 @@ entries:
     urls:
     - dyal-3.5.0.tgz
     version: 3.5.0
+  - annotations:
+      category: Infrastructure
+      petasus.io/revision: 82e0a3247055a1aa8dbb5ab9b360bcbad4cc0a59
+    apiVersion: v1
+    appVersion: v1.0.0
+    created: "2026-10-26T02:39:19.545952098Z"
+    description: A Helm chart for dyal backend deployment
+    digest: 59fe8fdb0631d365813f82d36df3a9ee186584b4486b65742eb6fc2420232f6c
+    keywords:
+    - AI
+    - infiniband
+    - clustering
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: dyal
+    sources:
+    - https://github.com/petasus-ai/dyal-backend
+    urls:
+    - dyal-1.0.0.tgz
+    version: 1.0.0
   edgetron:
   - annotations:
       category: Infrastructure
@@ -483,4 +504,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T02:25:53.723566923Z"
+generated: "2026-10-26T02:39:19.545571874Z"
