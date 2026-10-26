@@ -177,12 +177,12 @@ entries:
   edgetron:
   - annotations:
       category: Infrastructure
-      petasus.io/revision: c168fca4bd23b0a7f84e16dd2c70b2fa976862bb
+      petasus.io/revision: 87b70e390471ba1f74ded6768334407a197a9b2e
     apiVersion: v1
-    appVersion: 3.5.0
-    created: "2026-10-25T02:31:05.397068414Z"
+    appVersion: v3.5.0
+    created: "2026-10-26T02:49:27.850148122Z"
     description: A Helm chart for edgetron deployment
-    digest: eaa9ae8e60df5a5c32fb0cbbb0f07caff99692d75d82307e2f93b85eb448aa80
+    digest: df3cf17045f127496b20ea28b10738eba2c0b4a95130e9a44921cf134d3a0a82
     keywords:
     - mec
     - cluster api
@@ -221,12 +221,12 @@ entries:
   edgetron-crd-default:
   - annotations:
       category: Infrastructure
-      petasus.io/revision: 78ce453e6c27ba46d89bb908d72e7ad5cd454aaa
+      petasus.io/revision: fd3dc0802b354915c8f855820c3dc12e622bb2d8
     apiVersion: v1
-    appVersion: 3.5.0
-    created: "2026-10-22T08:21:05.180841751Z"
+    appVersion: v3.5.0
+    created: "2026-10-26T02:49:27.850570871Z"
     description: A Helm chart for edgetron CRD default deployment
-    digest: f192772f7e7bce2c221da60d4fc14447438484846777592ae0f3f03662a51961
+    digest: 4dbea36c7d4a02312ecf07ed3e23ccb323f4158a3d16fb6ae96a08cdfa62a2e2
     keywords:
     - mec
     - kubevirt
@@ -276,16 +276,16 @@ entries:
   kubevirt-cni:
   - annotations:
       category: Infrastructure
-      petasus.io/revision: 2193e50b87fdaa96142010b9a16a8f61fb918efb
+      petasus.io/revision: 4ac6adf62c847de867d6bdaf5bda077de74de1b4
     apiVersion: v1
-    appVersion: 3.5.0
-    created: "2026-10-22T08:22:22.240159376Z"
+    appVersion: v3.5.0
+    created: "2026-10-26T02:49:27.852653769Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
       version: 0.1.0
     description: A Helm chart for Kubevirt-CNI deployment
-    digest: a80017d0ecc9a0e87a8d10241cee2cb9891485f2ad7a0ce00c76e48ebb365b5e
+    digest: eabfbf4e9dc344ba4724983638623ff69e8452c217bdb7a3f23eb6720204e241
     home: https://wiki.onosproject.org/display/ONOS/SONA%3A+DC+Network+Virtualization
     keywords:
     - MEC
@@ -489,12 +489,12 @@ entries:
     version: 3.5.0
   vfio-manager:
   - annotations:
-      petasus.io/revision: 8876423aec5e0070b288e1508f316d2b36fdbfc1
+      petasus.io/revision: e832ce5abedada400354a86caa527e42c4d9586c
     apiVersion: v1
-    appVersion: 3.5.0
-    created: "2026-10-22T08:25:21.254196144Z"
+    appVersion: v3.5.0
+    created: "2026-10-26T02:49:27.852827388Z"
     description: A Helm chart for VFIO-manager
-    digest: 0c7590a06904055a05c2b8a388b128648ded0a44ad718c5eaf546e89fdc367b0
+    digest: 81b10fea5595f01c3f1b1bddf1ed62af92d6102189ba1300eafaa45828c410bd
     maintainers:
     - email: changju.gim@sk.com
       name: Changju Kim
@@ -504,4 +504,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T02:39:19.545571874Z"
+generated: "2026-10-26T02:49:27.849401495Z"
