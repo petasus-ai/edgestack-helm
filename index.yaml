@@ -469,6 +469,20 @@ entries:
     urls:
     - petasus-resource-manager-3.5.0-cilium.tgz
     version: 3.5.0-cilium
+  - annotations:
+      petasus.io/revision: f56c427aefd5b2fd031522619d8f918e8e851a55
+    apiVersion: v2
+    appVersion: v2.14.0
+    created: "2026-10-26T04:33:09.150658125Z"
+    description: A Helm chart for Petasus Resource Manager
+    digest: 151f562c345d89ed5594882a308d11e56723ef8546b2c55f63db19d764ef9f09
+    name: petasus-resource-manager
+    sources:
+    - https://github.com/petasus-ai/petasus-resource-manager
+    type: application
+    urls:
+    - petasus-resource-manager-2.14.0.tgz
+    version: 2.14.0
   pulley-spider:
   - annotations:
       category: Infrastructure
@@ -525,4 +539,4 @@ entries:
     urls:
     - vfio-manager-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T04:31:31.452555253Z"
+generated: "2026-10-26T04:33:09.150107211Z"
