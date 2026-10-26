@@ -8,8 +8,9 @@ master (stable channel), append-only:
   - a chart file the index does not list yet is added to it;
   - a chart file whose digest differs from its index entry, or an entry whose file is
     gone, is a change to a published version: a chart listed in .github/unguarded.txt
-    (still republished under one version by its repository) is indexed again; any other
-    is restored from history to the contents its index entry names;
+    (still republished under one version by its repository), or any chart when the list
+    holds "*", is indexed again; any other is restored from history to the contents its
+    index entry names;
   - a 0.0.0-dev chart belongs on dev and is removed.
   New and changed entries are merged into the index (helm repo index --merge), so the
   others keep their creation time; a removed entry reindexes everything.
@@ -99,7 +100,7 @@ def main():
             elif path not in listed:
                 merge.append(path)
             elif listed[path][2] != digest:
-                if name in unguarded:
+                if "*" in unguarded or name in unguarded:
                     merge.append(path)
                 elif restore(path, listed[path][2]):
                     problems.append(f"{path}: {name} {version} is published and does not change; restored")
@@ -108,7 +109,7 @@ def main():
         for path, (name, version, digest) in listed.items():
             if path in files:
                 continue
-            if name in unguarded:
+            if "*" in unguarded or name in unguarded:
                 reindex_all = True
             elif restore(path, digest):
                 problems.append(f"{path}: {name} {version} is published and stays; restored")

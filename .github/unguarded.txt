@@ -4,6 +4,11 @@
 # from this list once its repository publishes through publish-chart (dev channel on its
 # main branch, a new version for each release); for the v3.5.0 components that is right
 # after their v3.5.0 release republishes 3.5.0 one last time.
+#
+# "*" unguards every chart: published versions may be overwritten until the 3.5 platform
+# release is cut (decided 2026-10-26, while the core components are at v3.5.0-rc.N).
+# Remove it at the release-3.5 cut.
+*
 authentik
 kubevirt-xpu-device-plugin
 petasus-resource-manager
