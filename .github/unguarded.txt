@@ -10,5 +10,3 @@ dra-driver-xpu
 kubevirt-xpu-device-plugin
 petasus-resource-manager
 pulley-spider
-edgetron
-petasus-kubesphere
