@@ -277,6 +277,27 @@ entries:
   edgetron-crd-default:
   - annotations:
       category: Infrastructure
+      petasus.io/revision: d4e80656c53140afda170289c0439515413cdfd6
+    apiVersion: v1
+    appVersion: v3.5.1
+    created: "2026-10-28T05:51:46.110231037Z"
+    description: A Helm chart for edgetron CRD default deployment
+    digest: 6d33634ea18086680114ba9bf2c5172aef64bee2091353186def8c6d16fc3268
+    keywords:
+    - mec
+    - kubevirt
+    - provision
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: edgetron-crd-default
+    sources:
+    - https://github.com/edgestack/edgetron
+    urls:
+    - edgetron-crd-default-3.5.1.tgz
+    version: 3.5.1
+  - annotations:
+      category: Infrastructure
       petasus.io/revision: fd3dc0802b354915c8f855820c3dc12e622bb2d8
     apiVersion: v1
     appVersion: v3.5.0
@@ -650,4 +671,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-28T03:59:41.665143944Z"
+generated: "2026-10-28T05:51:46.109817425Z"
