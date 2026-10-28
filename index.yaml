@@ -38,7 +38,7 @@ entries:
           url: https://docs.goauthentik.io/img/screen_admin_light.jpg
     apiVersion: v2
     appVersion: 2025.8.4
-    created: "2026-10-28T23:40:43.850878804Z"
+    created: "2026-10-28T23:49:17.859800629Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -60,7 +60,7 @@ entries:
       version: 2.3.0
     description: authentik is an open-source Identity Provider focused on flexibility
       and versatility
-    digest: c6eb68749c55da7e5de5f0c728887404364822d956c4e85c0c2def9114d5b51c
+    digest: 9b4d6dc35777dcaa79003e646017affad128d77a4f0cbd9f14922e70f4d3688f
     home: https://goauthentik.io
     icon: https://goauthentik.io/img/icon.png
     keywords:
@@ -720,4 +720,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-28T23:40:43.839459459Z"
+generated: "2026-10-28T23:49:17.840520628Z"
