@@ -478,6 +478,18 @@ entries:
     - petasus-document-3.5.0.tgz
     version: 3.5.0
   - annotations:
+      petasus.io/revision: a04127ec2f09217959095679010ad894710d2150
+    apiVersion: v2
+    appVersion: v3.5.0-rc.2
+    created: "2026-10-28T01:04:22.637553505Z"
+    description: A Helm chart for Petasus AI Cloud document
+    digest: 171abf2ee28be0a6c63bfd2ca6620ec1e217c4f2801978384f8297c8c1c09d44
+    name: petasus-document
+    type: application
+    urls:
+    - petasus-document-3.5.0-rc.2.tgz
+    version: 3.5.0-rc.2
+  - annotations:
       petasus.io/revision: 57e9d01541b8bf495776222509acdca11636d6b8
     apiVersion: v2
     appVersion: v3.5.0-rc.1
@@ -624,4 +636,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-26T08:14:12.275228263Z"
+generated: "2026-10-28T01:04:22.637144447Z"
