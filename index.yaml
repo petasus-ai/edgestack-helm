@@ -543,6 +543,20 @@ entries:
     urls:
     - petasus-document-3.5.0-rc.1.tgz
     version: 3.5.0-rc.1
+  petasus-kaas-kubesphere:
+  - annotations:
+      petasus.io/revision: da2e9e70faee688e72a2097eba0e7cad01e01bc2
+    apiVersion: v2
+    appVersion: v3.5.1
+    created: "2026-10-28T05:54:14.721802276Z"
+    description: KubeSphere core (ks-apiserver, ks-controller-manager, ks-console)
+      for a Petasus KaaS cluster
+    digest: 680fba94246e0df1fd73e3ece05c903ad1022b00a07a8394b68fa505b22a657a
+    name: petasus-kaas-kubesphere
+    type: application
+    urls:
+    - petasus-kaas-kubesphere-3.5.1.tgz
+    version: 3.5.1
   petasus-kubesphere:
   - annotations:
       petasus.io/revision: 5706d0a03ed5ac7f8f46b98c56ca5c43f308eae9
@@ -706,4 +720,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-28T05:53:37.609048683Z"
+generated: "2026-10-28T05:54:14.719403196Z"
