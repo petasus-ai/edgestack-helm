@@ -89,6 +89,95 @@ entries:
     urls:
     - authentik-2025.8.4.tgz
     version: 2025.8.4
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: upgrade to authentik 2025.8.4
+      artifacthub.io/images: |
+        - name: authentik
+          image: ghcr.io/goauthentik/server:2025.8.4
+          whitelisted: true
+        - name: authentik-outpost-proxy
+          image: ghcr.io/goauthentik/proxy:2025.8.4
+          whitelisted: true
+        - name: authentik-outpost-ldap
+          image: ghcr.io/goauthentik/ldap:2025.8.4
+          whitelisted: true
+        - name: authentik-outpost-radius
+          image: ghcr.io/goauthentik/radius:2025.8.4
+          whitelisted: true
+        - name: authentik-outpost-rac
+          image: ghcr.io/goauthentik/rac:2025.8.4
+          whitelisted: true
+      artifacthub.io/license: GPL
+      artifacthub.io/links: |
+        - name: GitHub
+          url: https://github.com/goauthentik/authentik
+        - name: Docs
+          url: https://goauthentik.io/docs/
+      artifacthub.io/maintainers: |
+        - name: authentik Team
+          email: hello@goauthentik.io
+          url: https://goauthentik.io
+      artifacthub.io/screenshots: |
+        - title: User interface
+          url: https://docs.goauthentik.io/img/screen_apps_light.jpg
+        - title: Admin interface
+          url: https://docs.goauthentik.io/img/screen_admin_light.jpg
+      petasus.io/revision: 1681def81eb1b466331bda7e4b0c9665f6d59825
+    apiVersion: v2
+    appVersion: 2025.8.4
+    created: "2026-10-29T07:50:41.588000307Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 16.7.26
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 22.0.4
+    - alias: serviceAccount
+      condition: serviceAccount.create
+      name: authentik-remote-cluster
+      repository: https://charts.goauthentik.io
+      version: 2.1.0
+    - alias: gatewaycontroller
+      condition: gatewaycontroller.enabled
+      name: nginx-gateway-fabric
+      repository: oci://ghcr.io/nginx/charts
+      version: 2.3.0
+    description: authentik is an open-source Identity Provider focused on flexibility
+      and versatility
+    digest: 4290b0bfb802b0885d6b78c456155dbcd96fb784adfe1a55309f7524a945e198
+    home: https://goauthentik.io
+    icon: https://goauthentik.io/img/icon.png
+    keywords:
+    - authentication
+    - directory
+    - identity
+    - idp
+    - ldap
+    - oauth
+    - oidc
+    - proxy
+    - saml
+    - scim
+    - single-sign-on
+    - sp
+    - sso
+    maintainers:
+    - email: hello@goauthentik.io
+      name: authentik Team
+      url: https://goauthentik.io
+    name: authentik
+    sources:
+    - https://goauthentik.io/docs/
+    - https://github.com/goauthentik/authentik
+    type: application
+    urls:
+    - authentik-2025.8.4-petasus.1.tgz
+    version: 2025.8.4-petasus.1
   dra-driver-sriov:
   - annotations:
       petasus.io/revision: af95477b0fed961be29ee6ab299d0b369c8134ef
@@ -720,4 +809,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-28T23:49:17.840520628Z"
+generated: "2026-10-29T07:50:41.573203769Z"
