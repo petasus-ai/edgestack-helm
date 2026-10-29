@@ -1,11 +1,97 @@
 apiVersion: v1
 entries:
+  authentik:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: upgrade to authentik 2026.8.5
+      artifacthub.io/images: |
+        - name: authentik
+          image: ghcr.io/goauthentik/server:2026.8.5
+          whitelisted: true
+        - name: authentik-outpost-proxy
+          image: ghcr.io/goauthentik/proxy:2026.8.5
+          whitelisted: true
+        - name: authentik-outpost-ldap
+          image: ghcr.io/goauthentik/ldap:2026.8.5
+          whitelisted: true
+        - name: authentik-outpost-radius
+          image: ghcr.io/goauthentik/radius:2026.8.5
+          whitelisted: true
+        - name: authentik-outpost-rac
+          image: ghcr.io/goauthentik/rac:2026.8.5
+          whitelisted: true
+      artifacthub.io/license: GPL
+      artifacthub.io/links: |
+        - name: GitHub
+          url: https://github.com/goauthentik/authentik
+        - name: Docs
+          url: https://goauthentik.io/docs/
+      artifacthub.io/maintainers: |
+        - name: authentik Team
+          email: hello@goauthentik.io
+          url: https://goauthentik.io
+      artifacthub.io/screenshots: |
+        - title: User interface
+          url: https://docs.goauthentik.io/img/screen_apps_light.jpg
+        - title: Admin interface
+          url: https://docs.goauthentik.io/img/screen_admin_light.jpg
+      petasus.io/revision: 5b0425b8aceee9feb5a05e43a769a0e23697a5f5
+    apiVersion: v2
+    appVersion: 2026.8.5
+    created: "2026-10-29T07:49:14.34911688Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.8.17
+    - alias: serviceAccount
+      condition: serviceAccount.create
+      name: authentik-remote-cluster
+      repository: https://charts.goauthentik.io
+      version: 2.1.0
+    - alias: gatewaycontroller
+      condition: gatewaycontroller.enabled
+      name: nginx-gateway-fabric
+      repository: oci://ghcr.io/nginx/charts
+      version: 2.3.0
+    description: authentik is an open-source Identity Provider focused on flexibility
+      and versatility
+    digest: 23ce62a0c8b6eeaf58ae30b2b74dfcae29e915cf55d92c59834f156d6a1a7035
+    home: https://goauthentik.io
+    icon: https://goauthentik.io/img/icon.png
+    keywords:
+    - authentication
+    - directory
+    - identity
+    - idp
+    - ldap
+    - oauth
+    - oidc
+    - proxy
+    - saml
+    - scim
+    - single-sign-on
+    - sp
+    - sso
+    maintainers:
+    - email: hello@goauthentik.io
+      name: authentik Team
+      url: https://goauthentik.io
+    name: authentik
+    sources:
+    - https://goauthentik.io/docs/
+    - https://github.com/goauthentik/authentik
+    type: application
+    urls:
+    - authentik-0.0.0-dev.tgz
+    version: 0.0.0-dev
   dra-driver-sriov:
   - annotations:
       petasus.io/revision: af95477b0fed961be29ee6ab299d0b369c8134ef
     apiVersion: v2
     appVersion: dev
-    created: "2026-10-29T02:39:56.723452362Z"
+    created: "2026-10-29T07:49:14.34962057Z"
     description: Helm chart for a Dynamic Resource Allocation (DRA) resource driver
       for SR-IOV devices
     digest: 262a3d6432b93d82d8184c1516e22dab27e1b920aa7243b45163a623200e4b54
@@ -20,7 +106,7 @@ entries:
       petasus.io/revision: 65358e56d364a039502e2a18f35416dd3c7c213a
     apiVersion: v2
     appVersion: dev
-    created: "2026-10-29T02:39:56.723973444Z"
+    created: "2026-10-29T07:49:14.350202255Z"
     description: Vendor-neutral DRA driver exposing VFIO passthrough and mediated
       devices to KubeVirt VMs
     digest: ae1f9205636d71e1cf6b27d3dec79ae83d220e5e4e8aeab57431b8044044073f
@@ -48,7 +134,7 @@ entries:
       petasus.io/revision: 31b560ec9bab05cad2a385ed0af59023e10961a2
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-29T02:39:56.724185349Z"
+    created: "2026-10-29T07:49:14.350428409Z"
     description: A Helm chart for dyal backend deployment
     digest: bc06f989320720ba5e333453ac4c7b1f8ed22903040026c1e5ce07d5880cf9e9
     keywords:
@@ -70,7 +156,7 @@ entries:
       petasus.io/revision: 4bc5740b46ce8b4b020700201ada869b1fd89fcb
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-29T02:39:56.72486085Z"
+    created: "2026-10-29T07:49:14.351198861Z"
     description: A Helm chart for edgetron deployment
     digest: cdd3ad800d7b36f12a64078350743ac635332b819f0a02beac43f8e9c862b892
     keywords:
@@ -92,7 +178,7 @@ entries:
       petasus.io/revision: de9403103e4a2aaa27b6bf0050843adaffe62062
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-29T02:39:56.725101837Z"
+    created: "2026-10-29T07:49:14.351482915Z"
     description: A Helm chart for edgetron CRD deployment
     digest: ed97c3dd7346b02a6fd93d379d82ad52afc959c0a9a429a7a05b45c18c2e3206
     keywords:
@@ -114,7 +200,7 @@ entries:
       petasus.io/revision: d4e80656c53140afda170289c0439515413cdfd6
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-29T02:39:56.72531965Z"
+    created: "2026-10-29T07:49:14.35171817Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: 22f04427c50f61d6c3f435fcb69a80bf383c7a5594ac529e2983b0069c2fc70c
     keywords:
@@ -136,7 +222,7 @@ entries:
       petasus.io/revision: 35d3cdff3aa0e5a958cc41e9471a0953ce1eadd7
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-29T02:39:56.72556903Z"
+    created: "2026-10-29T07:49:14.352026758Z"
     description: A Helm chart for edgetron image default deployment
     digest: d1c5d85113381c103f921479e529b7b3ecbe5662877f5c1da648673f07f6286e
     keywords:
@@ -158,7 +244,7 @@ entries:
       petasus.io/revision: 7cdda1779bcf519d389a395af132a9cb213f9407
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-29T02:39:56.728425921Z"
+    created: "2026-10-29T07:49:14.35394569Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -185,7 +271,7 @@ entries:
       petasus.io/revision: 77764af480efef7ed3ac9acdbacfa668a144cb4d
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-29T02:39:56.728794848Z"
+    created: "2026-10-29T07:49:14.354148986Z"
     description: A Helm chart for kubevirt-xpu-device-plugin
     digest: 486036517938cd820bcbd8a4aaef70586490f2a5c0dc119d65cab3ce22b44d6f
     maintainers:
@@ -202,7 +288,7 @@ entries:
       petasus.io/revision: 7e258d75bea1f64c6abcf1b433ea475e6b18ddca
     apiVersion: v2
     appVersion: dev
-    created: "2026-10-29T02:39:56.729354207Z"
+    created: "2026-10-29T07:49:14.354502055Z"
     description: Turns NVSentinel GPU health signals from Cluster API workload clusters
       into Machine remediation on the management cluster.
     digest: 776961b7e642236a18d90117b54e8a9574ec99c45cfc95cab9abfb10dab53895
@@ -224,7 +310,7 @@ entries:
       petasus.io/revision: 57e9d01541b8bf495776222509acdca11636d6b8
     apiVersion: v2
     appVersion: dev
-    created: "2026-10-29T02:39:56.729750815Z"
+    created: "2026-10-29T07:49:14.35469121Z"
     description: A Helm chart for Petasus AI Cloud document
     digest: db1d6b148ef78659da6b7dbf525dd775578fc9fe2dd32271f052f3f984fbb26c
     name: petasus-document
@@ -237,7 +323,7 @@ entries:
       petasus.io/revision: da2e9e70faee688e72a2097eba0e7cad01e01bc2
     apiVersion: v2
     appVersion: dev
-    created: "2026-10-29T02:39:56.731888855Z"
+    created: "2026-10-29T07:49:14.357258328Z"
     description: KubeSphere core (ks-apiserver, ks-controller-manager, ks-console)
       for a Petasus KaaS cluster
     digest: eceac9c54e336c23a160b0ccf22723bc917238a973c98636abcfb81110c54244
@@ -251,7 +337,7 @@ entries:
       petasus.io/revision: e10a5bf2574c12548cfeb5a09e58067fecd2ab51
     apiVersion: v2
     appVersion: dev
-    created: "2026-10-29T02:39:56.734201829Z"
+    created: "2026-10-29T07:49:14.358655351Z"
     description: KubeSphere core (ks-apiserver, ks-controller-manager, ks-console)
       for the Petasus hub
     digest: 8e8d0faac33a553221c574b7ece8dddf041d63a04bb6865f766c50262d6c0949
@@ -265,7 +351,7 @@ entries:
       petasus.io/revision: 7647b18b7b799982c1d4f8d80ddf164f6eb07d22
     apiVersion: v2
     appVersion: dev
-    created: "2026-10-29T02:39:56.734503386Z"
+    created: "2026-10-29T07:49:14.358975154Z"
     description: A Helm chart for Petasus Resource Manager
     digest: a4a2e82c6b863066b798254565220e5914dded1fd99cb06a84b4f7d606c2874f
     name: petasus-resource-manager
@@ -280,7 +366,7 @@ entries:
       petasus.io/revision: 9464899826081c28c8949713731fbedc13b7d51d
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-29T02:39:56.734691455Z"
+    created: "2026-10-29T07:49:14.359162555Z"
     description: A Helm chart for VFIO-manager
     digest: d34833fcf7e07159a7d2a1cd451138ecb4ca9268e57fb72a209bd494e03cc686
     maintainers:
@@ -298,7 +384,7 @@ entries:
       petasus.io/revision: 25f864a9e5df45bbc7e743bd0d92f145aec70c9a
     apiVersion: v1
     appVersion: dev
-    created: "2026-10-29T02:39:56.734874366Z"
+    created: "2026-10-29T07:49:14.359355752Z"
     description: A Helm chart for virtvnc deployment
     digest: 5a3d03bfa1d58b94fd18c2a7329b1f8fb5cbede2f3888626472222ee77e9bf58
     home: https://github.com/petasus-ai/kubevirt-novnc
@@ -316,4 +402,4 @@ entries:
     urls:
     - virtvnc-0.0.0-dev.tgz
     version: 0.0.0-dev
-generated: "2026-10-29T02:39:56.722811191Z"
+generated: "2026-10-29T07:49:14.33524694Z"
