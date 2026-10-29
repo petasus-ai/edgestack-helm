@@ -9,7 +9,6 @@
 # release is cut (decided 2026-10-26, while the core components are at v3.5.0-rc.N).
 # Remove it at the release-3.5 cut.
 *
-authentik
 kubevirt-xpu-device-plugin
 petasus-resource-manager
 pulley-spider
