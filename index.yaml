@@ -428,12 +428,12 @@ entries:
     version: 3.5.0
   - annotations:
       category: Infrastructure
-      petasus.io/revision: 82e0a3247055a1aa8dbb5ab9b360bcbad4cc0a59
+      petasus.io/revision: 1d4fdd203bd3a2567ad6312c9679cbecc48128d2
     apiVersion: v1
     appVersion: v1.0.0
-    created: "2026-10-26T07:40:04.073400955Z"
+    created: "2026-10-30T22:17:16.525459078Z"
     description: A Helm chart for dyal backend deployment
-    digest: 59fe8fdb0631d365813f82d36df3a9ee186584b4486b65742eb6fc2420232f6c
+    digest: e3f7d4d0d2dd542ddb3cb2db84f6df77c4494a517a02c92d21ecdfdd01f1fe9e
     keywords:
     - AI
     - infiniband
@@ -443,7 +443,7 @@ entries:
       name: Jian Li
     name: dyal
     sources:
-    - https://github.com/petasus-ai/dyal-backend
+    - https://gitlab.tde.sktelecom.com/PETASUS/dyal-backend
     urls:
     - dyal-1.0.0.tgz
     version: 1.0.0
@@ -1000,4 +1000,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-10-30T05:03:20.906635679Z"
+generated: "2026-10-30T22:17:16.525076212Z"
