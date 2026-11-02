@@ -473,6 +473,32 @@ entries:
     version: 0.1.0
   dra-driver-xpu:
   - annotations:
+      petasus.io/revision: 2bb4e0580d0abcca48f87c943d95a2efd8a3c351
+    apiVersion: v2
+    appVersion: v0.2.0
+    created: "2026-11-02T08:37:22.231789784Z"
+    description: Vendor-neutral DRA driver exposing VFIO passthrough and mediated
+      devices to KubeVirt VMs
+    digest: 073f6fc1c4bf077a5d503f407d04483835e42bd37256915f3f69e31f4002dddb
+    home: https://github.com/petasus-ai/dra-driver-xpu
+    keywords:
+    - dra
+    - kubevirt
+    - vfio
+    - gpu
+    - passthrough
+    kubeVersion: '>=1.35.0-0'
+    maintainers:
+    - email: pyguni@gmail.com
+      name: Jian Li
+    name: dra-driver-xpu
+    sources:
+    - https://github.com/petasus-ai/dra-driver-xpu
+    type: application
+    urls:
+    - dra-driver-xpu-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
       petasus.io/revision: 65358e56d364a039502e2a18f35416dd3c7c213a
     apiVersion: v2
     appVersion: v0.1.0
@@ -1108,4 +1134,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-02T08:36:58.269796109Z"
+generated: "2026-11-02T08:37:22.230974596Z"
