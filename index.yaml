@@ -852,6 +852,25 @@ entries:
     version: 2.7.0
   nvsentinel-capi-remediator:
   - apiVersion: v2
+    appVersion: v0.3.0
+    created: "2026-11-02T08:43:55.789955959Z"
+    description: Turns NVSentinel GPU health signals from Cluster API workload clusters
+      into Machine remediation on the management cluster.
+    digest: 6bdd9ee482ff1e824cbd00da90a63a3a64fff36e755195745b81bca33d1b2d17
+    home: https://github.com/petasus-ai/nvsentinel-capi-remediator
+    keywords:
+    - nvsentinel
+    - cluster-api
+    - gpu
+    - remediation
+    name: nvsentinel-capi-remediator
+    sources:
+    - https://github.com/petasus-ai/nvsentinel-capi-remediator
+    type: application
+    urls:
+    - nvsentinel-capi-remediator-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     appVersion: v0.2.1
     created: "2026-10-26T07:40:04.081511099Z"
     description: Turns NVSentinel GPU health signals from Cluster API workload clusters
@@ -1155,4 +1174,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-02T08:40:03.799545678Z"
+generated: "2026-11-02T08:43:55.789334643Z"
