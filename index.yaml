@@ -430,6 +430,20 @@ entries:
     version: 2025.8.4-petasus.1
   dra-driver-sriov:
   - annotations:
+      petasus.io/revision: 2ca177ec0575da09e845d7e6e407b0ab24a4bd2f
+    apiVersion: v2
+    appVersion: v3.5.1
+    created: "2026-11-02T08:36:58.27051074Z"
+    description: Helm chart for a Dynamic Resource Allocation (DRA) resource driver
+      for SR-IOV devices
+    digest: 9be110bdd048b02709f6bcc4a9eef825ae08d0ef238f0123f91b79843e86087f
+    kubeVersion: '>=1.34.0-0'
+    name: dra-driver-sriov
+    type: application
+    urls:
+    - dra-driver-sriov-3.5.1.tgz
+    version: 3.5.1
+  - annotations:
       petasus.io/revision: af95477b0fed961be29ee6ab299d0b369c8134ef
     apiVersion: v2
     appVersion: v3.5.0
@@ -1094,4 +1108,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-02T08:07:13.494631463Z"
+generated: "2026-11-02T08:36:58.269796109Z"
