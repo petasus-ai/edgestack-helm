@@ -591,12 +591,12 @@ entries:
   edgetron:
   - annotations:
       category: Infrastructure
-      petasus.io/revision: 932166efe11f4a109b83b8c96b82f4ec23dfb9cf
+      petasus.io/revision: 880efce9b05002a35e23af2baa1bab583fa45d42
     apiVersion: v1
     appVersion: v3.5.0
-    created: "2026-10-26T07:40:04.074360997Z"
+    created: "2026-11-03T01:26:18.873524321Z"
     description: A Helm chart for edgetron deployment
-    digest: 4bd2ef9e0d35b9ece5b88462406ba4611044f67e1ad6920b3cc9e7738b0bbe39
+    digest: 20705a5eef2bd7da40d9ccdf35b3a72aa381d71c260cd0507a8b45900730c98a
     keywords:
     - mec
     - cluster api
@@ -999,6 +999,19 @@ entries:
     version: 3.5.1
   petasus-kubesphere:
   - annotations:
+      petasus.io/revision: 52c67de37bdc945d6c32dd5bc5342940dfa0744c
+    apiVersion: v2
+    appVersion: v3.5.0
+    created: "2026-11-03T01:26:18.875966127Z"
+    description: KubeSphere core (ks-apiserver, ks-controller-manager, ks-console)
+      for the Petasus hub
+    digest: df88b27248bdef88a8180973237c835992c27d9982edb6182a0fa015a9509211
+    name: petasus-kubesphere
+    type: application
+    urls:
+    - petasus-kubesphere-3.5.0.tgz
+    version: 3.5.0
+  - annotations:
       petasus.io/revision: 5706d0a03ed5ac7f8f46b98c56ca5c43f308eae9
     apiVersion: v2
     appVersion: v3.5.0-rc.1
@@ -1174,4 +1187,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-02T08:43:55.789334643Z"
+generated: "2026-11-03T01:26:18.872316337Z"
