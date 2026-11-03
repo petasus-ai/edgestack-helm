@@ -1161,6 +1161,20 @@ entries:
     - petasus-resource-manager-3.5.0-cilium.tgz
     version: 3.5.0-cilium
   - annotations:
+      petasus.io/revision: 05e533dff9f1b5da4bec2710c9775a2a6a7f7dc4
+    apiVersion: v2
+    appVersion: v2.14.6
+    created: "2026-11-03T07:32:59.825897344Z"
+    description: A Helm chart for Petasus Resource Manager
+    digest: 6eb4d642670efd34f86cc65435c10e8da5d124ec2d993d20da05f706eadce70b
+    name: petasus-resource-manager
+    sources:
+    - https://github.com/petasus-ai/petasus-resource-manager
+    type: application
+    urls:
+    - petasus-resource-manager-2.14.6.tgz
+    version: 2.14.6
+  - annotations:
       petasus.io/revision: bcae1c11762e4439add760a9c262cb16076a7f8d
     apiVersion: v2
     appVersion: v2.14.5
@@ -1324,4 +1338,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-03T07:31:31.6744884Z"
+generated: "2026-11-03T07:32:59.825416553Z"
