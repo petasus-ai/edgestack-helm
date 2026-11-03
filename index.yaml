@@ -1006,6 +1006,19 @@ entries:
     version: 3.5.0-rc.1
   petasus-kaas-kubesphere:
   - annotations:
+      petasus.io/revision: e9e5701af1d8d44c2a1d3cc2f6f5a8b859e768ac
+    apiVersion: v2
+    appVersion: v3.5.2
+    created: "2026-11-03T05:54:40.660355054Z"
+    description: KubeSphere core (ks-apiserver, ks-controller-manager, ks-console)
+      for a Petasus KaaS cluster
+    digest: ff83374df5e16cee7ec12a03f6a5b19d4f92591470cc3f9e688c35602ff3cd35
+    name: petasus-kaas-kubesphere
+    type: application
+    urls:
+    - petasus-kaas-kubesphere-3.5.2.tgz
+    version: 3.5.2
+  - annotations:
       petasus.io/revision: da2e9e70faee688e72a2097eba0e7cad01e01bc2
     apiVersion: v2
     appVersion: v3.5.1
@@ -1018,6 +1031,27 @@ entries:
     urls:
     - petasus-kaas-kubesphere-3.5.1.tgz
     version: 3.5.1
+  petasus-kaas-logging:
+  - annotations:
+      petasus.io/revision: e9e5701af1d8d44c2a1d3cc2f6f5a8b859e768ac
+    apiVersion: v2
+    appVersion: v3.5.2
+    created: "2026-11-03T05:54:40.675745411Z"
+    dependencies:
+    - name: opensearch
+      repository: ""
+      version: 3.9.0
+    - name: fluent-operator
+      repository: ""
+      version: 4.4.0
+    description: The log store of a Petasus KaaS cluster's KubeSphere (OpenSearch,
+      fluent-operator and the pipeline that fills it)
+    digest: b358e6c3eee2b9a9ac0ee6c44552b34b4a0fced81bdd548680a7bf422370696e
+    name: petasus-kaas-logging
+    type: application
+    urls:
+    - petasus-kaas-logging-3.5.2.tgz
+    version: 3.5.2
   petasus-kubesphere:
   - annotations:
       petasus.io/revision: 52c67de37bdc945d6c32dd5bc5342940dfa0744c
@@ -1222,4 +1256,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-03T02:01:42.636908915Z"
+generated: "2026-11-03T05:54:40.656346253Z"
