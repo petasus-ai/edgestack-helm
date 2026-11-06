@@ -862,6 +862,27 @@ entries:
     urls:
     - kubevirt-cni-3.5.0.tgz
     version: 3.5.0
+  kubevirt-csi:
+  - annotations:
+      petasus.io/revision: 1fd943bc52834994c5a441f4990f0108ad0ab461
+    apiVersion: v2
+    appVersion: v0.1.0
+    created: "2026-11-06T03:50:25.58086271Z"
+    description: 'The tenant side of the KubeVirt CSI driver for a cluster whose nodes
+      are KubeVirt VMs: the node plugin and a StorageClass whose volumes are DataVolumes
+      of the infrastructure cluster, hotplugged into the node VMs. The controller
+      runs in the infrastructure cluster (chart kubevirt-csi-hub).'
+    digest: 114b448fdc0481b637d8bc75ad1ef3a177c07ed554cf014544934a9ca5fbff9a
+    home: https://github.com/petasus-ai/kubevirt-csi-driver
+    kubeVersion: '>=1.24.0-0'
+    name: kubevirt-csi
+    sources:
+    - https://github.com/petasus-ai/kubevirt-csi-driver
+    - https://github.com/kubevirt/csi-driver
+    type: application
+    urls:
+    - kubevirt-csi-0.1.0.tgz
+    version: 0.1.0
   kubevirt-xpu-device-plugin:
   - annotations:
       petasus.io/revision: 77764af480efef7ed3ac9acdbacfa668a144cb4d
@@ -1338,4 +1359,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-03T07:32:59.825416553Z"
+generated: "2026-11-06T03:50:25.580296402Z"
