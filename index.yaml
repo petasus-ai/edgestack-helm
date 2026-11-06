@@ -1156,12 +1156,12 @@ entries:
     version: 3.5.0-rc.1
   petasus-resource-manager:
   - annotations:
-      petasus.io/revision: 091fe8f0aa64522cb3d27381b12b382985c86321
+      petasus.io/revision: bae88cf889edc8eccf9e92dad4ce3c428df4dad2
     apiVersion: v2
     appVersion: latest
-    created: "2026-11-02T07:28:49.669508193Z"
+    created: "2026-11-06T03:52:34.186866147Z"
     description: A Helm chart for Petasus Resource Manager
-    digest: 1156afbfcc5ae4665cb42a0db8b87deb756d63d711af7591c257cb0cf1380f58
+    digest: 2d84a4cd3e7f446ccb2de6a17d49608850afcf1b43e3adfe0ebd9e1669a6fa78
     name: petasus-resource-manager
     sources:
     - https://github.com/petasus-ai/petasus-resource-manager
@@ -1359,4 +1359,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-06T03:50:25.580296402Z"
+generated: "2026-11-06T03:52:34.18623569Z"
