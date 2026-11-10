@@ -1,14 +1,10 @@
-# Charts still republished under the same version (3.5.0, 0.1.0, ...) by their
-# repositories. update-index.yml lets these be overwritten or deleted on master; every
-# other chart is append-only there, so a published version never changes. Remove a chart
-# from this list once its repository publishes through publish-chart (dev channel on its
-# main branch, a new version for each release); for the v3.5.0 components that is right
-# after their v3.5.0 release republishes 3.5.0 one last time.
+# Charts still republished under the same version by their repositories. update-index.yml
+# lets these be overwritten or deleted on master; every other chart is append-only there,
+# so a published version never changes. Remove a chart from this list once its repository
+# publishes through publish-chart with a new version for each release (and the dev channel
+# from its main branch).
 #
-# "*" unguards every chart: published versions may be overwritten until the 3.5 platform
-# release is cut (decided 2026-10-26, while the core components are at v3.5.0-rc.N).
-# Remove it at the release-3.5 cut.
-*
+#   kubevirt-xpu-device-plugin  kubevirt-xpu-device-plugin-helm republishes 3.5.0 from main
+#   pulley-spider               pulley-spider-helm commits pulley-spider-3.5.0.tgz from master
 kubevirt-xpu-device-plugin
-petasus-resource-manager
 pulley-spider
