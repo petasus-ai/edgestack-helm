@@ -1154,6 +1154,22 @@ entries:
     urls:
     - petasus-kubesphere-3.5.0-rc.1.tgz
     version: 3.5.0-rc.1
+  petasus-mcp:
+  - annotations:
+      petasus.io/revision: 14f46ffd07cffb5e074e38fdf81e2a078f9f00bd
+    apiVersion: v2
+    appVersion: v0.1.0-rc.1
+    created: "2026-11-11T07:38:12.030680116Z"
+    description: The Petasus MCP server, through which AI agents work with Petasus
+      as the signed-in user
+    digest: 480a2c5a2b14aa5301be7424bdb9cac18861e3fcd05f3fd407b97a2a81419d8a
+    name: petasus-mcp
+    sources:
+    - https://gitlab.tde.sktelecom.com/PETASUS/mcp-server
+    type: application
+    urls:
+    - petasus-mcp-0.1.0-rc.1.tgz
+    version: 0.1.0-rc.1
   petasus-resource-manager:
   - annotations:
       petasus.io/revision: 84d945b5e1b4ac832f686a1120962c732d9f927f
@@ -1373,4 +1389,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-10T06:05:04.657134638Z"
+generated: "2026-11-11T07:38:12.029892917Z"
