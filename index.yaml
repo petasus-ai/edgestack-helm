@@ -804,6 +804,27 @@ entries:
   edgetron-image-default:
   - annotations:
       category: Infrastructure
+      petasus.io/revision: c2f7c11bb50e88df323c3bcdecd091cf434bd738
+    apiVersion: v1
+    appVersion: v3.5.1
+    created: "2026-11-12T03:05:11.874330171Z"
+    description: A Helm chart for edgetron image default deployment
+    digest: 61bc8f18642264798b671b29fb58d2f70a04bf37063b8f918a5a29165593142e
+    keywords:
+    - mec
+    - kubevirt
+    - provision
+    maintainers:
+    - email: gunine@sk.com
+      name: Jian Li
+    name: edgetron-image-default
+    sources:
+    - https://github.com/edgestack/edgetron
+    urls:
+    - edgetron-image-default-3.5.1.tgz
+    version: 3.5.1
+  - annotations:
+      category: Infrastructure
       petasus.io/revision: cea860aff817086088147ba47978a85a823fae77
     apiVersion: v1
     appVersion: v3.5.0
@@ -1389,4 +1410,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-11T07:38:12.029892917Z"
+generated: "2026-11-12T03:05:11.873861093Z"
