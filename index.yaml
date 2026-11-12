@@ -1150,6 +1150,19 @@ entries:
     version: 3.5.2
   petasus-kubesphere:
   - annotations:
+      petasus.io/revision: fdf05c8f79925ea8a3ffeeea50edf83fd1e9d541
+    apiVersion: v2
+    appVersion: v3.5.1
+    created: "2026-11-12T04:46:21.605125773Z"
+    description: KubeSphere core (ks-apiserver, ks-controller-manager, ks-console)
+      for the Petasus hub
+    digest: 17f5d548f8d89694ab80d09ccae72a10e409912540d98626ce9f69a8d2422d12
+    name: petasus-kubesphere
+    type: application
+    urls:
+    - petasus-kubesphere-3.5.1.tgz
+    version: 3.5.1
+  - annotations:
       petasus.io/revision: 52c67de37bdc945d6c32dd5bc5342940dfa0744c
     apiVersion: v2
     appVersion: v3.5.0
@@ -1410,4 +1423,4 @@ entries:
     urls:
     - virtvnc-3.5.0.tgz
     version: 3.5.0
-generated: "2026-11-12T03:05:11.873861093Z"
+generated: "2026-11-12T04:46:21.603562251Z"
