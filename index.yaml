@@ -39,7 +39,7 @@ entries:
       petasus.io/revision: 80962693d9b57a0677a2db738e15b3fecc80258c
     apiVersion: v2
     appVersion: 2026.8.5
-    created: "2026-11-18T05:00:39.247076698Z"
+    created: "2026-11-18T05:24:01.97366706Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -86,7 +86,7 @@ entries:
       petasus.io/revision: af95477b0fed961be29ee6ab299d0b369c8134ef
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.247689579Z"
+    created: "2026-11-18T05:24:01.974030979Z"
     description: Helm chart for a Dynamic Resource Allocation (DRA) resource driver
       for SR-IOV devices
     digest: 262a3d6432b93d82d8184c1516e22dab27e1b920aa7243b45163a623200e4b54
@@ -101,7 +101,7 @@ entries:
       petasus.io/revision: 2bb4e0580d0abcca48f87c943d95a2efd8a3c351
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.248358204Z"
+    created: "2026-11-18T05:24:01.974401979Z"
     description: Vendor-neutral DRA driver exposing VFIO passthrough and mediated
       devices to KubeVirt VMs
     digest: 9ae34d968559eadae4079c1b68c3207eb263f5d2290e711f7c79bbb2ff587e47
@@ -129,7 +129,7 @@ entries:
       petasus.io/revision: 15068b4aaeff859e00484aedc17c5903511ffa04
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.248649302Z"
+    created: "2026-11-18T05:24:01.974554719Z"
     description: A Helm chart for dyal backend deployment
     digest: 8e59ce5b2aa776b33c23d3eb17bb6f62bc80be2828bd1e62ad35ca7b5e3a29ae
     keywords:
@@ -151,7 +151,7 @@ entries:
       petasus.io/revision: d5f612f6f7803c9c489919b4187e7ca5a6b12fc1
     apiVersion: v1
     appVersion: dev
-    created: "2026-11-18T05:00:39.249608474Z"
+    created: "2026-11-18T05:24:01.975142416Z"
     description: A Helm chart for edgetron deployment
     digest: fca62bb7546d43030cd6a892444f7874611ea66fce94b0d71d93b7193b5002b9
     keywords:
@@ -173,7 +173,7 @@ entries:
       petasus.io/revision: de9403103e4a2aaa27b6bf0050843adaffe62062
     apiVersion: v1
     appVersion: dev
-    created: "2026-11-18T05:00:39.249927584Z"
+    created: "2026-11-18T05:24:01.975317861Z"
     description: A Helm chart for edgetron CRD deployment
     digest: ed97c3dd7346b02a6fd93d379d82ad52afc959c0a9a429a7a05b45c18c2e3206
     keywords:
@@ -195,7 +195,7 @@ entries:
       petasus.io/revision: 84edeebd3e2621c35041b5aca405597da68c1e2e
     apiVersion: v1
     appVersion: dev
-    created: "2026-11-18T05:00:39.250171851Z"
+    created: "2026-11-18T05:24:01.975608439Z"
     description: A Helm chart for edgetron CRD default deployment
     digest: df84b8407fd0687ae89a0aab20696a81a13922a14bc40fe8b0dad783a462eab7
     keywords:
@@ -217,7 +217,7 @@ entries:
       petasus.io/revision: c2f7c11bb50e88df323c3bcdecd091cf434bd738
     apiVersion: v1
     appVersion: dev
-    created: "2026-11-18T05:00:39.250441706Z"
+    created: "2026-11-18T05:24:01.976167188Z"
     description: A Helm chart for edgetron image default deployment
     digest: e12701097303b89b9b8f4d9d6c6c2794961a2f679a3ca75b6c186d1241b1d42b
     keywords:
@@ -239,7 +239,7 @@ entries:
       petasus.io/revision: 7cdda1779bcf519d389a395af132a9cb213f9407
     apiVersion: v1
     appVersion: dev
-    created: "2026-11-18T05:00:39.252295343Z"
+    created: "2026-11-18T05:24:01.977327378Z"
     dependencies:
     - name: helm-toolkit
       repository: http://localhost:8879/charts
@@ -266,7 +266,7 @@ entries:
       petasus.io/revision: 1fd943bc52834994c5a441f4990f0108ad0ab461
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.25261944Z"
+    created: "2026-11-18T05:24:01.977508742Z"
     description: 'The tenant side of the KubeVirt CSI driver for a cluster whose nodes
       are KubeVirt VMs: the node plugin and a StorageClass whose volumes are DataVolumes
       of the infrastructure cluster, hotplugged into the node VMs. The controller
@@ -287,7 +287,7 @@ entries:
       petasus.io/revision: 77764af480efef7ed3ac9acdbacfa668a144cb4d
     apiVersion: v1
     appVersion: dev
-    created: "2026-11-18T05:00:39.252853632Z"
+    created: "2026-11-18T05:24:01.977636194Z"
     description: A Helm chart for kubevirt-xpu-device-plugin
     digest: 486036517938cd820bcbd8a4aaef70586490f2a5c0dc119d65cab3ce22b44d6f
     maintainers:
@@ -304,7 +304,7 @@ entries:
       petasus.io/revision: 7e258d75bea1f64c6abcf1b433ea475e6b18ddca
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.254032079Z"
+    created: "2026-11-18T05:24:01.977850638Z"
     description: Turns NVSentinel GPU health signals from Cluster API workload clusters
       into Machine remediation on the management cluster.
     digest: 776961b7e642236a18d90117b54e8a9574ec99c45cfc95cab9abfb10dab53895
@@ -326,7 +326,7 @@ entries:
       petasus.io/revision: 57e9d01541b8bf495776222509acdca11636d6b8
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.254314163Z"
+    created: "2026-11-18T05:24:01.977983298Z"
     description: A Helm chart for Petasus AI Cloud document
     digest: db1d6b148ef78659da6b7dbf525dd775578fc9fe2dd32271f052f3f984fbb26c
     name: petasus-document
@@ -339,7 +339,7 @@ entries:
       petasus.io/revision: 705e610e6448519cee58d4d1ba15d51f71b70af8
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.259225586Z"
+    created: "2026-11-18T05:24:01.980742942Z"
     description: KubeSphere core (ks-apiserver, ks-controller-manager, ks-console)
       for a Petasus KaaS cluster
     digest: b607a2d7d42862b18684aff2a92dbc4ebd9f713185f6d1995ea1e67c37cd2cb1
@@ -353,7 +353,7 @@ entries:
       petasus.io/revision: b8d6983af0d0ed530224de3fe6e8ea1780b693d9
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.274665126Z"
+    created: "2026-11-18T05:24:01.989710433Z"
     dependencies:
     - name: opensearch
       repository: ""
@@ -374,7 +374,7 @@ entries:
       petasus.io/revision: a7ace3f5a0c8862cabf229b2a5c90bf174d95965
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.276082487Z"
+    created: "2026-11-18T05:24:01.990614317Z"
     description: KubeSphere core (ks-apiserver, ks-controller-manager, ks-console)
       for the Petasus hub
     digest: ec722758f28730c5153d39f55ad019691e0c64b548bcc2149060f98d7d0c1acf
@@ -388,7 +388,7 @@ entries:
       petasus.io/revision: 3db456fc17e40f343212dd7a8e97240c59003a83
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.276624351Z"
+    created: "2026-11-18T05:24:01.990949062Z"
     description: The Petasus MCP server, through which AI agents work with Petasus
       as the signed-in user
     digest: 1c5a989853de4b2e8cd4251834c87daeddd5a9620963a7299c181a5ac6b31513
@@ -401,12 +401,12 @@ entries:
     version: 0.0.0-dev
   petasus-resource-manager:
   - annotations:
-      petasus.io/revision: e3e946b27d86f95ab5fe5848ada4a436a3a76d80
+      petasus.io/revision: bf2f9fc54dec436d81805ea5ff5ce0f3855fe00f
     apiVersion: v2
     appVersion: dev
-    created: "2026-11-18T05:00:39.277050942Z"
+    created: "2026-11-18T05:24:01.99117291Z"
     description: A Helm chart for Petasus Resource Manager
-    digest: a36c46d4da3cc6c8c18832b368b9f8af7e2ce10c13de971c4acf6b076759060b
+    digest: 2f2047457dceefc4e048427b12168db28c9ada3900205e6732f644a448614e15
     name: petasus-resource-manager
     sources:
     - https://github.com/petasus-ai/petasus-resource-manager
@@ -419,7 +419,7 @@ entries:
       petasus.io/revision: 9464899826081c28c8949713731fbedc13b7d51d
     apiVersion: v1
     appVersion: dev
-    created: "2026-11-18T05:00:39.277304213Z"
+    created: "2026-11-18T05:24:01.991296416Z"
     description: A Helm chart for VFIO-manager
     digest: d34833fcf7e07159a7d2a1cd451138ecb4ca9268e57fb72a209bd494e03cc686
     maintainers:
@@ -437,7 +437,7 @@ entries:
       petasus.io/revision: 25f864a9e5df45bbc7e743bd0d92f145aec70c9a
     apiVersion: v1
     appVersion: dev
-    created: "2026-11-18T05:00:39.277536723Z"
+    created: "2026-11-18T05:24:01.99143772Z"
     description: A Helm chart for virtvnc deployment
     digest: 5a3d03bfa1d58b94fd18c2a7329b1f8fb5cbede2f3888626472222ee77e9bf58
     home: https://github.com/petasus-ai/kubevirt-novnc
@@ -455,4 +455,4 @@ entries:
     urls:
     - virtvnc-0.0.0-dev.tgz
     version: 0.0.0-dev
-generated: "2026-11-18T05:00:39.237663893Z"
+generated: "2026-11-18T05:24:01.968526369Z"
